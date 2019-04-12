@@ -35,6 +35,33 @@
       "creatorName": "Riot Games",
       "createdAt": "2016-10-14:03:30:37Z",
       "embedLink": "https://clips.twitch.tv/embed?clip=FunFreezingChickenKappaPride&autoplay=false"
+    },
+    {
+      "type": "youtube-video",
+      "videoId": "HZnP2yVK94A",
+      "title": "THAT SHOULDN'T HAVE HAPPENED...",
+      "thumbnailUrl": "https://i.ytimg.com/vi/HZnP2yVK94A/default.jpg",
+      "creatorName": "IWDominate",
+      "createdAt": "2019-04-07:04:44:47Z",
+      "embedLink": "https://www.youtube.com/embed/HZnP2yVK94A"
+    },
+    {
+      "type": "twitch-clip",
+      "videoId": "FairDarlingAirGuitarKlappa",
+      "title": "NB3 VS T2G",
+      "thumbnailUrl": "https://clips-media-assets2.twitch.tv/33571426192-offset-10090-preview-260x147.jpg",
+      "creatorName": "Nightblue3",
+      "createdAt": "2019-04-06:03:30:37Z",
+      "embedLink": "https://clips.twitch.tv/embed?clip=FairDarlingAirGuitarKlappa&autoplay=false"
+    },
+    {
+      "type": "twitch-clip",
+      "videoId": "DelightfulTalentedKeyboardTBCheesePull",
+      "title": "nuts",
+      "thumbnailUrl": "https://clips-media-assets2.twitch.tv/AT-cm%7C434275469-preview-260x147.jpg",
+      "creatorName": "Doublelift",
+      "createdAt": "2019-04-08:03:30:37Z",
+      "embedLink": "https://clips.twitch.tv/embed?clip=DelightfulTalentedKeyboardTBCheesePull&autoplay=false"
     }
   ]
 }

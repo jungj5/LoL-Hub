@@ -11,6 +11,7 @@
     "axios": "^0.18.0",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
+    "react-grid-gallery": "0.5.4",
     "react-scripts": "2.1.8",
     "typescript": "3.3.4000"
   },
