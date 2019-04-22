@@ -3,36 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
 import { render } from 'react-dom';
-import { content } from './stubs/response1.json';
-
-// class App extends Component {
-//   render() {
-//     return (
-//       <div className="App">
-//         <header className="App-header">
-//           <img src={logo} className="App-logo" alt="logo" />
-//           <p>
-//             Edit <code>src/App.tsx</code> and save to reload.
-//           </p>
-//           <a
-//             className="App-link"
-//             href="https://reactjs.org"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             Learn React
-//           </a>
-//         </header>
-//       </div>
-//     );
-//   }
-// }
+// import { content } from './stubs/response1.json';
 
 interface ComponentState {
   initialContent: Content[],
   content: Content[],
-  selectedContentType?: string,
-  selectedRole?: string
+  selectedContentType: string,
+  selectedRole: string
 }
 
 interface Content {
@@ -67,56 +44,76 @@ class App extends Component<{}, ComponentState> {
 
   componentDidMount = async () => {
     try {
-      // const res = await axios.get('response1.json');
-      // const contentArray = res.data
-      //this.setState(contentArray);
-      setTimeout(() => {
-        this.setState({
-          initialContent: content, 
-          content: content
-        })
-      }, 200);
+      const res = await axios.get('http://localhost:1337/test');
+      const content = res.data.content;
+
+      this.setState({
+        initialContent: content,
+        content: content
+      });
+
+      // let content: Content[];
+      // fetch('localhost:1337/test')
+      // .then(response => response.json())
+      // .then(data => {
+      //   content = data.content;
+      //   this.setState({
+      //     initialContent: content,
+      //     content: content
+      //   });
+      // });
+      // setTimeout(() => {
+      //   this.setState({
+      //     initialContent: content, 
+      //     content: content
+      //   })
+      // }, 200);
 
     } catch (e) {
       console.log(e);
     }
   }
 
+  filterByContentType = (selectedContentType: string, contentArray: Content[]) => {
+    if (selectedContentType === 'all') {
+      return contentArray;
+    } else {
+      const result = contentArray.filter((media) => {
+        return media.type === selectedContentType;
+      });
+      return result;
+    }
+  }
+
+  filterByRole = (selectedRole: string, contentArray: Content[]) => {
+    if (selectedRole === 'all') {
+      return contentArray;
+    } else {
+      const result = contentArray.filter((media) => {
+        return streamers.get(selectedRole).includes(media.creatorName);
+      });
+      return result;
+    }
+  }
+
   contentFilter = async (field: string, event: any) => {
     await this.setState({[field]: event.target.value} as ComponentState);
-    let initialContentList = this.state.initialContent;
+    let contentArray = this.state.initialContent;
     let selectedContentType = this.state.selectedContentType;
     let selectedRole = this.state.selectedRole;
 
     if (selectedContentType === 'all' && selectedRole === 'all') {
       this.setState({content: this.state.initialContent});
-    } else if (selectedContentType === 'all' && selectedRole !== 'all') {
-      const updatedList = initialContentList.filter((media) => {
-        return streamers.get(selectedRole).includes(media.creatorName);
-      });
-      this.setState({
-        content: updatedList
-      });
-    } else if (selectedContentType !== 'all' && selectedRole === 'all') {
-      const updatedList = initialContentList.filter((media) => {
-        return media.type === selectedContentType;
-      });
-      this.setState({
-        content: updatedList
-      });
     } else {
-      const updatedList = initialContentList.filter((media) => {
-        return media.type === selectedContentType && streamers.get(selectedRole).includes(media.creatorName);
-      });
-      this.setState({
-        content: updatedList
-      });
+      contentArray = this.filterByContentType(selectedContentType, contentArray);
+      contentArray = this.filterByRole(selectedRole, contentArray);
+      this.setState({content: contentArray});
     }
   }
 
   render = () => {
     const results = this.state.content;
-    return results ?
+    return results.length > 0 ?
       this.renderResults(results) :
       this.renderLoading()
   }
@@ -172,3 +169,12 @@ export default App;
 //https://www.robinwieruch.de/react-fetching-data/
 //https://codepen.io/pjmtokyo/pen/ZGVjVV/
 //https://moduscreate.com/blog/ext-js-to-react-load-sort-and-filter-data-with-react/
+
+
+
+
+// referential transparancy
+// functional purity (pure functions)
+// Read up on these!!
+
+// React developer tools <-- get dis
