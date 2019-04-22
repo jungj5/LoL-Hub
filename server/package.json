@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "description": "Server implementation for LoL Hub",
+  "main": "app.ts",
+  "scripts": {
+    "start": "node dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "tsc -p ./src watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jungj5/LoL-Hub.git"
+  },
+  "author": "jungj5",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jungj5/LoL-Hub/issues"
+  },
+  "homepage": "https://github.com/jungj5/LoL-Hub#readme",
+  "dependencies": {
+    "@types/cors": "^2.8.4",
+    "@types/express": "^4.11.1",
+    "cheerio": "^1.0.0-rc.3",
+    "cheerio-tableparser": "^1.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "typescript": "^3.4.4"
+  }
+}

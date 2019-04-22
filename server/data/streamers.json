@@ -1,0 +1,3932 @@
+{
+    "streamers": [
+        {
+            "name": "Untara",
+            "role": "Top"
+        },
+        {
+            "name": "Sohwan",
+            "role": "Top"
+        },
+        {
+            "name": "ADD",
+            "role": "Top"
+        },
+        {
+            "name": "Lindarang",
+            "role": "Top"
+        },
+        {
+            "name": "Huni",
+            "role": "Top"
+        },
+        {
+            "name": "Lourlo",
+            "role": "Top"
+        },
+        {
+            "name": "Impact",
+            "role": "Top"
+        },
+        {
+            "name": "Licorice",
+            "role": "Top"
+        },
+        {
+            "name": "Ray",
+            "role": "Top"
+        },
+        {
+            "name": "Darshan",
+            "role": "Top"
+        },
+        {
+            "name": "Solo",
+            "role": "Top"
+        },
+        {
+            "name": "Flame",
+            "role": "Top"
+        },
+        {
+            "name": "Zig",
+            "role": "Top"
+        },
+        {
+            "name": "Hauntzer",
+            "role": "Top"
+        },
+        {
+            "name": "Swip3rR",
+            "role": "Top"
+        },
+        {
+            "name": "Odoamne",
+            "role": "Top"
+        },
+        {
+            "name": "Minkywhale",
+            "role": "Top"
+        },
+        {
+            "name": "Wunder",
+            "role": "Top"
+        },
+        {
+            "name": "Cabochard",
+            "role": "Top"
+        },
+        {
+            "name": "Thaldrin",
+            "role": "Top"
+        },
+        {
+            "name": "fallenbandit",
+            "role": "Top"
+        },
+        {
+            "name": "Maxtrobo",
+            "role": "Top"
+        },
+        {
+            "name": "Allorim",
+            "role": "Top"
+        },
+        {
+            "name": "PvPStejos",
+            "role": "Top"
+        },
+        {
+            "name": "Yang",
+            "role": "Top"
+        },
+        {
+            "name": "Ayel",
+            "role": "Top"
+        },
+        {
+            "name": "MMD",
+            "role": "Top"
+        },
+        {
+            "name": "Smeb",
+            "role": "Top"
+        },
+        {
+            "name": "V1PER",
+            "role": "Top"
+        },
+        {
+            "name": "Vizicsacsi",
+            "role": "Top"
+        },
+        {
+            "name": "Brandini",
+            "role": "Top"
+        },
+        {
+            "name": "lol_ikssu",
+            "role": "Top"
+        },
+        {
+            "name": "rflegendarylol",
+            "role": "Top"
+        },
+        {
+            "name": "tsm_dyrus",
+            "role": "Top"
+        },
+        {
+            "name": "voyboy",
+            "role": "Top+"
+        },
+        {
+            "name": "quaslol",
+            "role": "Top"
+        },
+        {
+            "name": "fox_looper",
+            "role": "Top"
+        },
+        {
+            "name": "kikis1205",
+            "role": "Top"
+        },
+        {
+            "name": "seraph",
+            "role": "Top"
+        },
+        {
+            "name": "balislol",
+            "role": "Top"
+        },
+        {
+            "name": "echokfo",
+            "role": "Top"
+        },
+        {
+            "name": "kev1ntv",
+            "role": "Top"
+        },
+        {
+            "name": "kubon_",
+            "role": "Top"
+        },
+        {
+            "name": "smashdd",
+            "role": "Top"
+        },
+        {
+            "name": "birryyu",
+            "role": "Top"
+        },
+        {
+            "name": "rohammers",
+            "role": "Top"
+        },
+        {
+            "name": "nadesrus",
+            "role": "Top"
+        },
+        {
+            "name": "wickd",
+            "role": "Top"
+        },
+        {
+            "name": "officialneegodbro",
+            "role": "Top+"
+        },
+        {
+            "name": "Aetheres",
+            "role": "Top"
+        },
+        {
+            "name": "canipi",
+            "role": "Top"
+        },
+        {
+            "name": "3in1warrior",
+            "role": "Top"
+        },
+        {
+            "name": "gotenk_lol",
+            "role": "Top"
+        },
+        {
+            "name": "xiconiq",
+            "role": "Top"
+        },
+        {
+            "name": "reventxz",
+            "role": "Top"
+        },
+        {
+            "name": "alliancela",
+            "role": "Top"
+        },
+        {
+            "name": "thulz",
+            "role": "Top"
+        },
+        {
+            "name": "thejukeslol",
+            "role": "Top+"
+        },
+        {
+            "name": "ebihurya",
+            "role": "Top+"
+        },
+        {
+            "name": "rainbrain",
+            "role": "Top+"
+        },
+        {
+            "name": "rus1wolfy",
+            "role": "Top"
+        },
+        {
+            "name": "solary",
+            "role": "Top+"
+        },
+        {
+            "name": "tfblade",
+            "role": "Top"
+        },
+        {
+            "name": "westrice",
+            "role": "Top"
+        },
+        {
+            "name": "weeknd",
+            "role": "Top"
+        },
+        {
+            "name": "Mangki",
+            "role": "Top"
+        },
+        {
+            "name": "thehydrogen",
+            "role": "Top"
+        },
+        {
+            "name": "summitphase",
+            "role": "Top+"
+        },
+        {
+            "name": "heisendong",
+            "role": "Top"
+        },
+        {
+            "name": "therdier",
+            "role": "Top"
+        },
+        {
+            "name": "lol_ajido",
+            "role": "Top"
+        },
+        {
+            "name": "gratis150ml",
+            "role": "Top"
+        },
+        {
+            "name": "enterdreamland",
+            "role": "Top"
+        },
+        {
+            "name": "ishiivel",
+            "role": "Top"
+        },
+        {
+            "name": "ireliacarriesu",
+            "role": "Top"
+        },
+        {
+            "name": "Stevens",
+            "role": "Top"
+        },
+        {
+            "name": "rangerzx",
+            "role": "Top"
+        },
+        {
+            "name": "hashinshin",
+            "role": "Top"
+        },
+        {
+            "name": "justjayce",
+            "role": "Top+"
+        },
+        {
+            "name": "blem",
+            "role": "Top"
+        },
+        {
+            "name": "keegunlol",
+            "role": "Top"
+        },
+        {
+            "name": "romanium33",
+            "role": "Top"
+        },
+        {
+            "name": "Panther",
+            "role": "Top"
+        },
+        {
+            "name": "dekar173",
+            "role": "Top"
+        },
+        {
+            "name": "thepowerofaura",
+            "role": "Top+"
+        },
+        {
+            "name": "boxbox",
+            "role": "Top"
+        },
+        {
+            "name": "bestrivenna",
+            "role": "Top"
+        },
+        {
+            "name": "revengeleague",
+            "role": "Top"
+        },
+        {
+            "name": "1adrianaries1",
+            "role": "Top"
+        },
+        {
+            "name": "kaevix",
+            "role": "Top"
+        },
+        {
+            "name": "youngrezzy",
+            "role": "Top"
+        },
+        {
+            "name": "singed420",
+            "role": "Top"
+        },
+        {
+            "name": "minishcap1",
+            "role": "Top"
+        },
+        {
+            "name": "kabeosyama",
+            "role": "Top"
+        },
+        {
+            "name": "tyobamu0511",
+            "role": "Top"
+        },
+        {
+            "name": "tilterella",
+            "role": "Top"
+        },
+        {
+            "name": "TheBausFFS",
+            "role": "Top"
+        },
+        {
+            "name": "expwy",
+            "role": "Top+"
+        },
+        {
+            "name": "kitkatxz",
+            "role": "Top+"
+        },
+        {
+            "name": "fwiizone",
+            "role": "Top"
+        },
+        {
+            "name": "ipav999",
+            "role": "Top"
+        },
+        {
+            "name": "rikentv",
+            "role": "Top"
+        },
+        {
+            "name": "realteemo",
+            "role": "Top"
+        },
+        {
+            "name": "foggedftw2",
+            "role": "Top"
+        },
+        {
+            "name": "boxerpete",
+            "role": "Top"
+        },
+        {
+            "name": "Knightgum",
+            "role": "Top"
+        },
+        {
+            "name": "ratirl",
+            "role": "Top+"
+        },
+        {
+            "name": "ringelkong",
+            "role": "Top"
+        },
+        {
+            "name": "regiszz",
+            "role": "Top"
+        },
+        {
+            "name": "arkadataediting",
+            "role": "Top"
+        },
+        {
+            "name": "Yassuo",
+            "role": "Top"
+        },
+        {
+            "name": "Ninetales",
+            "role": "Top"
+        },
+        {
+            "name": "Khomzar",
+            "role": "Top"
+        },
+        {
+            "name": "GoB GG",
+            "role": "Top"
+        },
+        {
+            "name": "xswrdruben",
+            "role": "Top"
+        },
+        {
+            "name": "魚丸XD",
+            "role": "Top"
+        },
+        {
+            "name": "mplyr",
+            "role": "Top"
+        },
+        {
+            "name": "darienlol",
+            "role": "Top"
+        },
+        {
+            "name": "megazerolol",
+            "role": "Top"
+        },
+        {
+            "name": "mistytoast",
+            "role": "Top"
+        },
+        {
+            "name": "edispaghetti",
+            "role": "Top"
+        },
+        {
+            "name": "alderiate",
+            "role": "Top"
+        },
+        {
+            "name": "gobgg",
+            "role": "Top"
+        },
+        {
+            "name": "vendetha",
+            "role": "Top"
+        },
+        {
+            "name": "sickmotionlol",
+            "role": "Top"
+        },
+        {
+            "name": "shinse1",
+            "role": "Top"
+        },
+        {
+            "name": "n0_j0y",
+            "role": "Top"
+        },
+        {
+            "name": "dd_warrior_lady",
+            "role": "Top"
+        },
+        {
+            "name": "abrobg",
+            "role": "Top"
+        },
+        {
+            "name": "squirrtlez",
+            "role": "Top"
+        },
+        {
+            "name": "picclol",
+            "role": "Top"
+        },
+        {
+            "name": "ultra_instinct_yahiko",
+            "role": "Top"
+        },
+        {
+            "name": "dystrex",
+            "role": "Top"
+        },
+        {
+            "name": "Giraffe Hugs",
+            "role": "Top"
+        },
+        {
+            "name": "nikjojo",
+            "role": "Top"
+        },
+        {
+            "name": "risti",
+            "role": "Top"
+        },
+        {
+            "name": "woodyfruity",
+            "role": "Top+"
+        },
+        {
+            "name": "lolgunslinger",
+            "role": "Top"
+        },
+        {
+            "name": "acewindstorm",
+            "role": "Top+"
+        },
+        {
+            "name": "bestjaycena",
+            "role": "Top"
+        },
+        {
+            "name": "fm_jayce",
+            "role": "Top"
+        },
+        {
+            "name": "kayle1v9",
+            "role": "Top"
+        },
+        {
+            "name": "mr_gimix",
+            "role": "Top"
+        },
+        {
+            "name": "Soul Mario",
+            "role": "Top+"
+        },
+        {
+            "name": "Sealam_",
+            "role": "Top+"
+        },
+        {
+            "name": "vdud3",
+            "role": "Top+"
+        },
+        {
+            "name": "Ichigo Oppa",
+            "role": "Top+"
+        },
+        {
+            "name": "tastypotatox",
+            "role": "Top"
+        },
+        {
+            "name": "kumakaider",
+            "role": "Top"
+        },
+        {
+            "name": "angormus",
+            "role": "Top"
+        },
+        {
+            "name": "godtierpantheon",
+            "role": "Top"
+        },
+        {
+            "name": "Nigityy",
+            "role": "Top"
+        },
+        {
+            "name": "Renekton Top Only",
+            "role": "Top"
+        },
+        {
+            "name": "bandannadann",
+            "role": "Top"
+        },
+        {
+            "name": "Wildhero",
+            "role": "Top+"
+        },
+        {
+            "name": "electrokidi",
+            "role": "Top"
+        },
+        {
+            "name": "abt_rogue",
+            "role": "Top"
+        },
+        {
+            "name": "cptcatface",
+            "role": "Top"
+        },
+        {
+            "name": "rikuulol",
+            "role": "Top"
+        },
+        {
+            "name": "ready2rumbleeuw",
+            "role": "Top+"
+        },
+        {
+            "name": "vato1234",
+            "role": "Top+"
+        },
+        {
+            "name": "catonese",
+            "role": "Top"
+        },
+        {
+            "name": "pinkwardlol",
+            "role": "Top"
+        },
+        {
+            "name": "druiddroid",
+            "role": "Top"
+        },
+        {
+            "name": "tornzer",
+            "role": "Top"
+        },
+        {
+            "name": "tommy309",
+            "role": "Top"
+        },
+        {
+            "name": "yamikazexz",
+            "role": "Top+"
+        },
+        {
+            "name": "staxl",
+            "role": "Top"
+        },
+        {
+            "name": "yang2101y",
+            "role": "Top"
+        },
+        {
+            "name": "hikashikun",
+            "role": "Top+"
+        },
+        {
+            "name": "mancoiv",
+            "role": "Top"
+        },
+        {
+            "name": "Sp4ceman",
+            "role": "Top"
+        },
+        {
+            "name": "goodguygarry",
+            "role": "Top+"
+        },
+        {
+            "name": "syforce92",
+            "role": "Top"
+        },
+        {
+            "name": "norseelite",
+            "role": "Top"
+        },
+        {
+            "name": "hardondonger",
+            "role": "Top+"
+        },
+        {
+            "name": "imapixeleuw",
+            "role": "Top"
+        },
+        {
+            "name": "boyofyourdreams",
+            "role": "Top"
+        },
+        {
+            "name": "kerber0s_",
+            "role": "Top"
+        },
+        {
+            "name": "Akrinuss",
+            "role": "Top"
+        },
+        {
+            "name": "wingsofdeath",
+            "role": "Top+"
+        },
+        {
+            "name": "phillyfuntimelol",
+            "role": "Top"
+        },
+        {
+            "name": "silverae",
+            "role": "Top"
+        },
+        {
+            "name": "ace_the_supervillain",
+            "role": "Top"
+        },
+        {
+            "name": "toliam",
+            "role": "Top"
+        },
+        {
+            "name": "iiiusionist",
+            "role": "Top+"
+        },
+        {
+            "name": "lordandsaviour1",
+            "role": "Top"
+        },
+        {
+            "name": "d1egend",
+            "role": "Top"
+        },
+        {
+            "name": "ivernivern",
+            "role": "Top+"
+        },
+        {
+            "name": "olaf_only",
+            "role": "Top"
+        },
+        {
+            "name": "panthonix",
+            "role": "Top"
+        },
+        {
+            "name": "quincyshadow",
+            "role": "Top"
+        },
+        {
+            "name": "solorenektononly",
+            "role": "Top"
+        },
+        {
+            "name": "letmerengar",
+            "role": "Top+"
+        },
+        {
+            "name": "calphen",
+            "role": "Top"
+        },
+        {
+            "name": "toliam",
+            "role": "Top"
+        },
+        {
+            "name": "lolharambe",
+            "role": "Top"
+        },
+        {
+            "name": "dzukill",
+            "role": "Top"
+        },
+        {
+            "name": "Masterly",
+            "role": "Top"
+        },
+        {
+            "name": "reapered",
+            "role": "Top+"
+        },
+        {
+            "name": "xicyneblood",
+            "role": "Top"
+        },
+        {
+            "name": "CappuTimo",
+            "role": "Top"
+        },
+        {
+            "name": "shikai70",
+            "role": "Top+"
+        },
+        {
+            "name": "part_the_sea",
+            "role": "Top+"
+        },
+        {
+            "name": "gongoon",
+            "role": "Top"
+        },
+        {
+            "name": "Roefel",
+            "role": "Top"
+        },
+        {
+            "name": "eddietanimoto",
+            "role": "Top"
+        },
+        {
+            "name": "fnatkgaming",
+            "role": "Top+"
+        },
+        {
+            "name": "xianjitv",
+            "role": "Top"
+        },
+        {
+            "name": "mosttoxiceu",
+            "role": "Top"
+        },
+        {
+            "name": "TheGatorMan",
+            "role": "Top+"
+        },
+        {
+            "name": "eshyn",
+            "role": "Top"
+        },
+        {
+            "name": "godrekton_",
+            "role": "Top"
+        },
+        {
+            "name": "syte_ryze",
+            "role": "Top+"
+        },
+        {
+            "name": "sirhcez",
+            "role": "Top"
+        },
+        {
+            "name": "AndrewInTheLane",
+            "role": "Top+"
+        },
+        {
+            "name": "thezixxxx",
+            "role": "Top"
+        },
+        {
+            "name": "chimalpopica",
+            "role": "Top"
+        },
+        {
+            "name": "hardondonger",
+            "role": "Top"
+        },
+        {
+            "name": "midstep",
+            "role": "Top"
+        },
+        {
+            "name": "kurosawalol",
+            "role": "Top+"
+        },
+        {
+            "name": "xoxxox_",
+            "role": "Top"
+        },
+        {
+            "name": "axm",
+            "role": "Top"
+        },
+        {
+            "name": "herdyn",
+            "role": "Top"
+        },
+        {
+            "name": "myprim0",
+            "role": "Top"
+        },
+        {
+            "name": "PhiDX",
+            "role": "Top"
+        },
+        {
+            "name": "rezonegames",
+            "role": "Top+"
+        },
+        {
+            "name": "ThisIsPatrik",
+            "role": "Top"
+        },
+        {
+            "name": "mezzplays",
+            "role": "Top"
+        },
+        {
+            "name": "Apocyliptic",
+            "role": "Top+"
+        },
+        {
+            "name": "renektenlol",
+            "role": "Top"
+        },
+        {
+            "name": "mrcambino",
+            "role": "Top"
+        },
+        {
+            "name": "theswiftexile",
+            "role": "Top"
+        },
+        {
+            "name": "cheewiz",
+            "role": "Top"
+        },
+        {
+            "name": "insanitylty",
+            "role": "Top"
+        },
+        {
+            "name": "uloze",
+            "role": "Top+"
+        },
+        {
+            "name": "therainman",
+            "role": "Top"
+        },
+        {
+            "name": "snow144",
+            "role": "Top"
+        },
+        {
+            "name": "draxyr",
+            "role": "Top"
+        },
+        {
+            "name": "nitrofen",
+            "role": "Top"
+        },
+        {
+            "name": "wriggledlol",
+            "role": "Top"
+        },
+        {
+            "name": "greentea",
+            "role": "Top"
+        },
+        {
+            "name": "mundo_stream",
+            "role": "Top"
+        },
+        {
+            "name": "bestadfizzna",
+            "role": "Top"
+        },
+        {
+            "name": "moonmarooned",
+            "role": "Top"
+        },
+        {
+            "name": "avaail",
+            "role": "Top"
+        },
+        {
+            "name": "jueviolegrace135",
+            "role": "Top"
+        },
+        {
+            "name": "secillia",
+            "role": "Top"
+        },
+        {
+            "name": "plsbuffsinged",
+            "role": "Top"
+        },
+        {
+            "name": "seamaken",
+            "role": "Top"
+        },
+        {
+            "name": "VictorGK",
+            "role": "Top"
+        },
+        {
+            "name": "reozx123",
+            "role": "Top"
+        },
+        {
+            "name": "gervasoadyt",
+            "role": "Top"
+        },
+        {
+            "name": "Peanut",
+            "role": "Jg"
+        },
+        {
+            "name": "Blank",
+            "role": "Jg"
+        },
+        {
+            "name": "Trick",
+            "role": "Jg"
+        },
+        {
+            "name": "Score",
+            "role": "Jg"
+        },
+        {
+            "name": "Spirit",
+            "role": "Jg"
+        },
+        {
+            "name": "Contractz",
+            "role": "Jg"
+        },
+        {
+            "name": "Xmithie",
+            "role": "Jg"
+        },
+        {
+            "name": "Svenskeren",
+            "role": "Jg"
+        },
+        {
+            "name": "Anda/Chorong",
+            "role": "Jg"
+        },
+        {
+            "name": "Akaadian",
+            "role": "Jg"
+        },
+        {
+            "name": "Dardoch",
+            "role": "Jg"
+        },
+        {
+            "name": "Meteos",
+            "role": "Jg"
+        },
+        {
+            "name": "Mike Yeung",
+            "role": "Jg"
+        },
+        {
+            "name": "Reignover",
+            "role": "Jg"
+        },
+        {
+            "name": "Lira",
+            "role": "Jg"
+        },
+        {
+            "name": "Maxlore",
+            "role": "Jg"
+        },
+        {
+            "name": "Santorin",
+            "role": "Jg"
+        },
+        {
+            "name": "Gilius",
+            "role": "Jg"
+        },
+        {
+            "name": "Kold",
+            "role": "Jg"
+        },
+        {
+            "name": "Jankos",
+            "role": "Jg"
+        },
+        {
+            "name": "Levi",
+            "role": "Jg"
+        },
+        {
+            "name": "Kitzuo",
+            "role": "Jg"
+        },
+        {
+            "name": "Shrimp",
+            "role": "Jg"
+        },
+        {
+            "name": "DoubleAiM",
+            "role": "Jg"
+        },
+        {
+            "name": "Kongyue",
+            "role": "Jg"
+        },
+        {
+            "name": "Odd Orange",
+            "role": "Jg"
+        },
+        {
+            "name": "chaserlol95",
+            "role": "Jg"
+        },
+        {
+            "name": "lol_inori",
+            "role": "Jg"
+        },
+        {
+            "name": "crumbzz",
+            "role": "Jg"
+        },
+        {
+            "name": "iwilldominate",
+            "role": "Jg"
+        },
+        {
+            "name": "saintvicious",
+            "role": "Jg"
+        },
+        {
+            "name": "Hard",
+            "role": "Jg"
+        },
+        {
+            "name": "dexter_lol",
+            "role": "Jg"
+        },
+        {
+            "name": "airwaks",
+            "role": "Jg"
+        },
+        {
+            "name": "yd3609",
+            "role": "Jg"
+        },
+        {
+            "name": "shorterace",
+            "role": "Jg"
+        },
+        {
+            "name": "arcsecond",
+            "role": "Jg+"
+        },
+        {
+            "name": "XoYnUzi",
+            "role": "Jg"
+        },
+        {
+            "name": "rush",
+            "role": "Jg"
+        },
+        {
+            "name": "l0ulex",
+            "role": "Jg"
+        },
+        {
+            "name": "valkrin",
+            "role": "Jg+"
+        },
+        {
+            "name": "moojin2",
+            "role": "Jg"
+        },
+        {
+            "name": "tarzaned",
+            "role": "Jg"
+        },
+        {
+            "name": "nightblue3",
+            "role": "Jg"
+        },
+        {
+            "name": "shernfire",
+            "role": "Jg"
+        },
+        {
+            "name": "metaphor",
+            "role": "Jg"
+        },
+        {
+            "name": "Pants Are Dragon",
+            "role": "Jg"
+        },
+        {
+            "name": "bmxspecks",
+            "role": "Jg"
+        },
+        {
+            "name": "trixondog",
+            "role": "Jg"
+        },
+        {
+            "name": "lolrudy",
+            "role": "Jg"
+        },
+        {
+            "name": "fragaslol",
+            "role": "Jg"
+        },
+        {
+            "name": "smashdd",
+            "role": "Jg"
+        },
+        {
+            "name": "kireiop",
+            "role": "Jg"
+        },
+        {
+            "name": "hairyabs",
+            "role": "Jg"
+        },
+        {
+            "name": "masterfiend",
+            "role": "Jg"
+        },
+        {
+            "name": "lolzentinel",
+            "role": "Jg"
+        },
+        {
+            "name": "silasplayslol",
+            "role": "Jg"
+        },
+        {
+            "name": "obviousx",
+            "role": "Jg"
+        },
+        {
+            "name": "morn1nglol",
+            "role": "Jg"
+        },
+        {
+            "name": "canipi",
+            "role": "Jg"
+        },
+        {
+            "name": "killerunit",
+            "role": "Jg"
+        },
+        {
+            "name": "lamabearlol",
+            "role": "Jg"
+        },
+        {
+            "name": "echutahlol",
+            "role": "Jg"
+        },
+        {
+            "name": "sense2jg",
+            "role": "Jg"
+        },
+        {
+            "name": "joey1114",
+            "role": "Jg"
+        },
+        {
+            "name": "airwaks",
+            "role": "Jg"
+        },
+        {
+            "name": "1snoupi",
+            "role": "Jg"
+        },
+        {
+            "name": "rainbrain",
+            "role": "Jg+"
+        },
+        {
+            "name": "cellybeary",
+            "role": "Jg"
+        },
+        {
+            "name": "xoynuzi",
+            "role": "Jg"
+        },
+        {
+            "name": "solary",
+            "role": "Jg+"
+        },
+        {
+            "name": "divine",
+            "role": "Jg"
+        },
+        {
+            "name": "cha_preto",
+            "role": "Jg"
+        },
+        {
+            "name": "rekk_lol",
+            "role": "Jg"
+        },
+        {
+            "name": "karasmai",
+            "role": "Jg"
+        },
+        {
+            "name": "htfnutty",
+            "role": "Jg"
+        },
+        {
+            "name": "taprootlol",
+            "role": "Jg"
+        },
+        {
+            "name": "ldsaber",
+            "role": "Jg"
+        },
+        {
+            "name": "damirkhazix",
+            "role": "Jg"
+        },
+        {
+            "name": "jovirone",
+            "role": "Jg"
+        },
+        {
+            "name": "erasusplay",
+            "role": "Jg"
+        },
+        {
+            "name": "Danijrm",
+            "role": "Jg"
+        },
+        {
+            "name": "4lanlol",
+            "role": "Jg"
+        },
+        {
+            "name": "chaosrain77",
+            "role": "Jg"
+        },
+        {
+            "name": "ARRRmando",
+            "role": "Jg"
+        },
+        {
+            "name": "thepowerofaura",
+            "role": "Jg+"
+        },
+        {
+            "name": "shaclone",
+            "role": "Jg"
+        },
+        {
+            "name": "Chase Shaco",
+            "role": "Jg"
+        },
+        {
+            "name": "1jugger",
+            "role": "Jg"
+        },
+        {
+            "name": "badeed",
+            "role": "Jg"
+        },
+        {
+            "name": "ratirl_l9",
+            "role": "Jg+"
+        },
+        {
+            "name": "supermetroidlol",
+            "role": "Jg"
+        },
+        {
+            "name": "davidroo",
+            "role": "Jg"
+        },
+        {
+            "name": "Japan Man",
+            "role": "Jg"
+        },
+        {
+            "name": "Ic0nic",
+            "role": "Jg"
+        },
+        {
+            "name": "hiroking",
+            "role": "Jg"
+        },
+        {
+            "name": "Saizo",
+            "role": "Jg"
+        },
+        {
+            "name": "Hive OCE",
+            "role": "Jg"
+        },
+        {
+            "name": "Agurin",
+            "role": "Jg"
+        },
+        {
+            "name": "Marex",
+            "role": "Jg"
+        },
+        {
+            "name": "Bieldomaul",
+            "role": "Jg"
+        },
+        {
+            "name": "edgesc",
+            "role": "Jg+"
+        },
+        {
+            "name": "king_nidhogg",
+            "role": "Jg"
+        },
+        {
+            "name": "whyseriouz",
+            "role": "Jg"
+        },
+        {
+            "name": "the_real_darvec",
+            "role": "Jg"
+        },
+        {
+            "name": "ea_demo",
+            "role": "Jg"
+        },
+        {
+            "name": "ensignledolol",
+            "role": "Jg+"
+        },
+        {
+            "name": "thehopko",
+            "role": "Jg+"
+        },
+        {
+            "name": "naniwasabi",
+            "role": "Jg"
+        },
+        {
+            "name": "dragonminkim",
+            "role": "Jg+"
+        },
+        {
+            "name": "liftingeu",
+            "role": "Jg"
+        },
+        {
+            "name": "ifresh_hd",
+            "role": "Jg"
+        },
+        {
+            "name": "showkz_lol",
+            "role": "Jg"
+        },
+        {
+            "name": "yoda",
+            "role": "Jg"
+        },
+        {
+            "name": "turklnator",
+            "role": "Jg"
+        },
+        {
+            "name": "yoda",
+            "role": "Jg"
+        },
+        {
+            "name": "code_lol",
+            "role": "Jg"
+        },
+        {
+            "name": "saintkilian",
+            "role": "Jg+"
+        },
+        {
+            "name": "mellamobigd",
+            "role": "Jg"
+        },
+        {
+            "name": "sunsetwastaken",
+            "role": "Jg"
+        },
+        {
+            "name": "rocklee015",
+            "role": "Jg"
+        },
+        {
+            "name": "acewindstorm",
+            "role": "Jg+"
+        },
+        {
+            "name": "4thEvolution",
+            "role": "Jg"
+        },
+        {
+            "name": "forestwithin",
+            "role": "Jg"
+        },
+        {
+            "name": "snappool",
+            "role": "Jg"
+        },
+        {
+            "name": "Sealam_",
+            "role": "Jg+"
+        },
+        {
+            "name": "gripex90",
+            "role": "Jg"
+        },
+        {
+            "name": "vstarzzz_",
+            "role": "Jg"
+        },
+        {
+            "name": "cowsep",
+            "role": "Jg"
+        },
+        {
+            "name": "vdud3",
+            "role": "Jg+"
+        },
+        {
+            "name": "ichigooppa",
+            "role": "Jg+"
+        },
+        {
+            "name": "Mabarry3",
+            "role": "Jg"
+        },
+        {
+            "name": "Wildhero",
+            "role": "Jg+"
+        },
+        {
+            "name": "colaeuw",
+            "role": "Jg"
+        },
+        {
+            "name": "vato1234",
+            "role": "Jg+"
+        },
+        {
+            "name": "Carry Clown",
+            "role": "Jg"
+        },
+        {
+            "name": "ShoMG",
+            "role": "Jg"
+        },
+        {
+            "name": "hikashikun",
+            "role": "Jg+"
+        },
+        {
+            "name": "ipav999",
+            "role": "Jg"
+        },
+        {
+            "name": "goodguygarry",
+            "role": "Jg+"
+        },
+        {
+            "name": "sewerskewerna",
+            "role": "Jg"
+        },
+        {
+            "name": "ofgsaiph",
+            "role": "Jg"
+        },
+        {
+            "name": "trick2g",
+            "role": "Jg"
+        },
+        {
+            "name": "elite500",
+            "role": "Jg"
+        },
+        {
+            "name": "gankr_zac",
+            "role": "Jg"
+        },
+        {
+            "name": "gweiss96",
+            "role": "Jg"
+        },
+        {
+            "name": "Peachtreelol",
+            "role": "Jg"
+        },
+        {
+            "name": "Renewall",
+            "role": "Jg"
+        },
+        {
+            "name": "imls",
+            "role": "Jg"
+        },
+        {
+            "name": "tsm_theoddone",
+            "role": "Jg"
+        },
+        {
+            "name": "doombringerex",
+            "role": "Jg"
+        },
+        {
+            "name": "brokenshardeuw",
+            "role": "Jg"
+        },
+        {
+            "name": "sickslaughter",
+            "role": "Jg"
+        },
+        {
+            "name": "theminzcon",
+            "role": "Jg"
+        },
+        {
+            "name": "theyordlesquad",
+            "role": "Jg"
+        },
+        {
+            "name": "chounted",
+            "role": "Jg+"
+        },
+        {
+            "name": "narkuss_lol",
+            "role": "Jg"
+        },
+        {
+            "name": "tierwulf",
+            "role": "Jg"
+        },
+        {
+            "name": "iwantmycigar",
+            "role": "Jg"
+        },
+        {
+            "name": "jackyace",
+            "role": "Jg"
+        },
+        {
+            "name": "ivernivern",
+            "role": "Jg+"
+        },
+        {
+            "name": "Soultran",
+            "role": "Jg+"
+        },
+        {
+            "name": "siddywiddy",
+            "role": "Jg"
+        },
+        {
+            "name": "letmerengar",
+            "role": "Jg+"
+        },
+        {
+            "name": "extremeperson",
+            "role": "Jg"
+        },
+        {
+            "name": "justinlee459",
+            "role": "Jg"
+        },
+        {
+            "name": "domzac",
+            "role": "Jg"
+        },
+        {
+            "name": "Pyenusman",
+            "role": "Jg"
+        },
+        {
+            "name": "reapered",
+            "role": "Jg+"
+        },
+        {
+            "name": "gleebglarbu",
+            "role": "Jg"
+        },
+        {
+            "name": "CappuTimo",
+            "role": "Jg"
+        },
+        {
+            "name": "shadarek",
+            "role": "Jg"
+        },
+        {
+            "name": "foxdrop",
+            "role": "Jg"
+        },
+        {
+            "name": "ianvv3",
+            "role": "Jg"
+        },
+        {
+            "name": "demonmonkey11",
+            "role": "Jg"
+        },
+        {
+            "name": "treabeard",
+            "role": "Jg"
+        },
+        {
+            "name": "mixrj",
+            "role": "Jg"
+        },
+        {
+            "name": "nikkone",
+            "role": "Jg"
+        },
+        {
+            "name": "rredkind",
+            "role": "Jg"
+        },
+        {
+            "name": "itsyoboiiseth",
+            "role": "Jg"
+        },
+        {
+            "name": "cheriosjon",
+            "role": "Jg"
+        },
+        {
+            "name": "imabigteemo",
+            "role": "Jg"
+        },
+        {
+            "name": "terrorearl",
+            "role": "Jg+"
+        },
+        {
+            "name": "theenderl",
+            "role": "Jg"
+        },
+        {
+            "name": "kitingishard",
+            "role": "Jg"
+        },
+        {
+            "name": "imissedmyq",
+            "role": "Jg"
+        },
+        {
+            "name": "weaselseashells",
+            "role": "Jg"
+        },
+        {
+            "name": "Aqua Dragon",
+            "role": "Jg+"
+        },
+        {
+            "name": "Apocyliptic",
+            "role": "Jg+"
+        },
+        {
+            "name": "uloze",
+            "role": "Jg+"
+        },
+        {
+            "name": "xcceleratez",
+            "role": "Jg"
+        },
+        {
+            "name": "sp4zie",
+            "role": "Jg+"
+        },
+        {
+            "name": "ffja",
+            "role": "Jg"
+        },
+        {
+            "name": "mundo_stream",
+            "role": "Jg"
+        },
+        {
+            "name": "honeybadger2198",
+            "role": "Jg"
+        },
+        {
+            "name": "heizman_lol",
+            "role": "Jg"
+        },
+        {
+            "name": "sysb0t",
+            "role": "Jg"
+        },
+        {
+            "name": "ialaia",
+            "role": "Jg"
+        },
+        {
+            "name": "gundaymonday",
+            "role": "Jg"
+        },
+        {
+            "name": "flamefirexxx",
+            "role": "Jg"
+        },
+        {
+            "name": "sethsebass",
+            "role": "Jg"
+        },
+        {
+            "name": "eqfox",
+            "role": "Jg"
+        },
+        {
+            "name": "Faker",
+            "role": "Mid"
+        },
+        {
+            "name": "Crown",
+            "role": "Mid"
+        },
+        {
+            "name": "Bjergsen",
+            "role": "Mid"
+        },
+        {
+            "name": "Jensen",
+            "role": "Mid"
+        },
+        {
+            "name": "Huhi",
+            "role": "Mid"
+        },
+        {
+            "name": "Pobelter",
+            "role": "Mid"
+        },
+        {
+            "name": "Hai",
+            "role": "Mid"
+        },
+        {
+            "name": "PowerOfEvil",
+            "role": "Mid"
+        },
+        {
+            "name": "Fenix",
+            "role": "Mid"
+        },
+        {
+            "name": "Ryu",
+            "role": "Mid"
+        },
+        {
+            "name": "Perkz",
+            "role": "Mid"
+        },
+        {
+            "name": "Nukeduck",
+            "role": "Mid"
+        },
+        {
+            "name": "Febiven",
+            "role": "Mid"
+        },
+        {
+            "name": "Sencux",
+            "role": "Mid"
+        },
+        {
+            "name": "Betsy",
+            "role": "Mid"
+        },
+        {
+            "name": "Keane",
+            "role": "Mid"
+        },
+        {
+            "name": "Goldenglue",
+            "role": "Mid"
+        },
+        {
+            "name": "Linsanity",
+            "role": "Mid"
+        },
+        {
+            "name": "Sun",
+            "role": "Mid"
+        },
+        {
+            "name": "Tuesday",
+            "role": "Mid"
+        },
+        {
+            "name": "Bobqin",
+            "role": "Mid"
+        },
+        {
+            "name": "Palafox",
+            "role": "Mid"
+        },
+        {
+            "name": "Mickey",
+            "role": "Mid"
+        },
+        {
+            "name": "AblazeOlive",
+            "role": "Mid"
+        },
+        {
+            "name": "Ninja",
+            "role": "Mid"
+        },
+        {
+            "name": "Westdoor",
+            "role": "Mid"
+        },
+        {
+            "name": "Pepii",
+            "role": "Mid"
+        },
+        {
+            "name": "GBM",
+            "role": "Mid"
+        },
+        {
+            "name": "Kuro",
+            "role": "Mid"
+        },
+        {
+            "name": "Pawn",
+            "role": "Mid"
+        },
+        {
+            "name": "Insanity",
+            "role": "Mid"
+        },
+        {
+            "name": "Yusui",
+            "role": "Mid"
+        },
+        {
+            "name": "Rakin",
+            "role": "Mid"
+        },
+        {
+            "name": "scarra",
+            "role": "Mid"
+        },
+        {
+            "name": "shiphtur",
+            "role": "Mid"
+        },
+        {
+            "name": "froggen",
+            "role": "Mid"
+        },
+        {
+            "name": "voyboy",
+            "role": "Mid+"
+        },
+        {
+            "name": "mancloud",
+            "role": "Mid"
+        },
+        {
+            "name": "nyjacky",
+            "role": "Mid"
+        },
+        {
+            "name": "pireanlol",
+            "role": "Mid"
+        },
+        {
+            "name": "tabzzhd",
+            "role": "Mid"
+        },
+        {
+            "name": "ecco",
+            "role": "Mid"
+        },
+        {
+            "name": "hotshotgg",
+            "role": "Mid"
+        },
+        {
+            "name": "arcsecond",
+            "role": "Mid"
+        },
+        {
+            "name": "Apdo",
+            "role": "Mid"
+        },
+        {
+            "name": "bigfatlp",
+            "role": "Mid"
+        },
+        {
+            "name": "celend",
+            "role": "Mid+"
+        },
+        {
+            "name": "officialneegodbro",
+            "role": "Mid+"
+        },
+        {
+            "name": "chunkylol",
+            "role": "Mid"
+        },
+        {
+            "name": "eikap",
+            "role": "Mid"
+        },
+        {
+            "name": "robbybob",
+            "role": "Mid"
+        },
+        {
+            "name": "strompest",
+            "role": "Mid"
+        },
+        {
+            "name": "fasthemagi",
+            "role": "Mid"
+        },
+        {
+            "name": "zerrsog",
+            "role": "Mid"
+        },
+        {
+            "name": "nemesis",
+            "role": "Mid"
+        },
+        {
+            "name": "valkrin",
+            "role": "Mid+"
+        },
+        {
+            "name": "lol2easy",
+            "role": "Mid"
+        },
+        {
+            "name": "midbeastlol",
+            "role": "Mid"
+        },
+        {
+            "name": "rudxlrl",
+            "role": "Mid"
+        },
+        {
+            "name": "elplugo",
+            "role": "Mid"
+        },
+        {
+            "name": "noway4u_sir",
+            "role": "Mid"
+        },
+        {
+            "name": "sologesang",
+            "role": "Mid"
+        },
+        {
+            "name": "hatrixxx",
+            "role": "Mid"
+        },
+        {
+            "name": "quinsie",
+            "role": "Mid"
+        },
+        {
+            "name": "paranoia2",
+            "role": "Mid"
+        },
+        {
+            "name": "rus1wolfy",
+            "role": "Mid+"
+        },
+        {
+            "name": "solary",
+            "role": "Mid+"
+        },
+        {
+            "name": "rencha",
+            "role": "Mid+"
+        },
+        {
+            "name": "nesualol",
+            "role": "Mid"
+        },
+        {
+            "name": "butler_delta",
+            "role": "Mid"
+        },
+        {
+            "name": "Grafo",
+            "role": "Mid"
+        },
+        {
+            "name": "Annie Bot",
+            "role": "Mid"
+        },
+        {
+            "name": "dasantk",
+            "role": "Mid"
+        },
+        {
+            "name": "annie_desu",
+            "role": "Mid"
+        },
+        {
+            "name": "quantumfizzics",
+            "role": "Mid"
+        },
+        {
+            "name": "alwaysplanahea1",
+            "role": "Mid"
+        },
+        {
+            "name": "lol_king_cobra",
+            "role": "Mid"
+        },
+        {
+            "name": "Bobby",
+            "role": "Mid"
+        },
+        {
+            "name": "sdiana2na",
+            "role": "Mid"
+        },
+        {
+            "name": "tobiasfate",
+            "role": "Mid"
+        },
+        {
+            "name": "summitphase",
+            "role": "Mid+"
+        },
+        {
+            "name": "justjayce",
+            "role": "Mid+"
+        },
+        {
+            "name": "zousenpai",
+            "role": "Mid"
+        },
+        {
+            "name": "kassadinscreed",
+            "role": "Mid"
+        },
+        {
+            "name": "KassadinsCreed",
+            "role": "Mid"
+        },
+        {
+            "name": "katevolved",
+            "role": "Mid"
+        },
+        {
+            "name": "autolykuslol",
+            "role": "Mid"
+        },
+        {
+            "name": "adnanniespref",
+            "role": "Mid"
+        },
+        {
+            "name": "A Wild AP Sona",
+            "role": "Mid+"
+        },
+        {
+            "name": "expwy",
+            "role": "Mid+"
+        },
+        {
+            "name": "ayphir",
+            "role": "Mid"
+        },
+        {
+            "name": "kitkatxz",
+            "role": "Mid+"
+        },
+        {
+            "name": "dunlol",
+            "role": "Mid"
+        },
+        {
+            "name": "yassuo",
+            "role": "Mid"
+        },
+        {
+            "name": "aceyasuo",
+            "role": "Mid"
+        },
+        {
+            "name": "llstylish",
+            "role": "Mid"
+        },
+        {
+            "name": "LonelyStar",
+            "role": "Mid"
+        },
+        {
+            "name": "Sologesang",
+            "role": "Mid"
+        },
+        {
+            "name": "Mandiocaa",
+            "role": "Mid"
+        },
+        {
+            "name": "SeewiGG",
+            "role": "Mid"
+        },
+        {
+            "name": "EspirTF",
+            "role": "Mid"
+        },
+        {
+            "name": "xemortv",
+            "role": "Mid+"
+        },
+        {
+            "name": "link",
+            "role": "Mid"
+        },
+        {
+            "name": "edgesc",
+            "role": "Mid+"
+        },
+        {
+            "name": "deathripi",
+            "role": "Mid"
+        },
+        {
+            "name": "vicksy",
+            "role": "Mid"
+        },
+        {
+            "name": "kroghzen",
+            "role": "Mid"
+        },
+        {
+            "name": "unholywish",
+            "role": "Mid"
+        },
+        {
+            "name": "frostyfiery",
+            "role": "Mid"
+        },
+        {
+            "name": "lolhexa",
+            "role": "Mid"
+        },
+        {
+            "name": "puduu",
+            "role": "Mid"
+        },
+        {
+            "name": "mrkenedyy",
+            "role": "Mid"
+        },
+        {
+            "name": "sedkayo",
+            "role": "Mid"
+        },
+        {
+            "name": "vertigal",
+            "role": "Mid"
+        },
+        {
+            "name": "legitkorea",
+            "role": "Mid"
+        },
+        {
+            "name": "klixz",
+            "role": "Mid"
+        },
+        {
+            "name": "freezena",
+            "role": "Mid"
+        },
+        {
+            "name": "cutemau",
+            "role": "Mid"
+        },
+        {
+            "name": "eleyte66",
+            "role": "Mid"
+        },
+        {
+            "name": "body_those_fools",
+            "role": "Mid"
+        },
+        {
+            "name": "saintkilian",
+            "role": "Mid+"
+        },
+        {
+            "name": "mrjunejune",
+            "role": "Mid"
+        },
+        {
+            "name": "salinelol",
+            "role": "Mid"
+        },
+        {
+            "name": "panunulol",
+            "role": "Mid"
+        },
+        {
+            "name": "woodyfruity",
+            "role": "Mid+"
+        },
+        {
+            "name": "potzelol",
+            "role": "Mid"
+        },
+        {
+            "name": "credenda",
+            "role": "Mid"
+        },
+        {
+            "name": "auzyristv",
+            "role": "Mid"
+        },
+        {
+            "name": "kat_life",
+            "role": "Mid"
+        },
+        {
+            "name": "flyerbeklol",
+            "role": "Mid"
+        },
+        {
+            "name": "corrupthope",
+            "role": "Mid"
+        },
+        {
+            "name": "Gamer Girl Kat",
+            "role": "Mid"
+        },
+        {
+            "name": "commandattacklol",
+            "role": "Mid"
+        },
+        {
+            "name": "ready2rumbleeuw",
+            "role": "Mid+"
+        },
+        {
+            "name": "yamikazexz",
+            "role": "Mid+"
+        },
+        {
+            "name": "scrummna",
+            "role": "Mid"
+        },
+        {
+            "name": "kubsar",
+            "role": "Mid"
+        },
+        {
+            "name": "thesoulmario",
+            "role": "Mid+"
+        },
+        {
+            "name": "vinegarlol",
+            "role": "Mid"
+        },
+        {
+            "name": "azzapp",
+            "role": "Mid"
+        },
+        {
+            "name": "rhobalas_lol",
+            "role": "Mid"
+        },
+        {
+            "name": "elite500",
+            "role": "Mid"
+        },
+        {
+            "name": "thehopko",
+            "role": "Mid+"
+        },
+        {
+            "name": "zwaglol",
+            "role": "Mid"
+        },
+        {
+            "name": "hardondonger",
+            "role": "Mid+"
+        },
+        {
+            "name": "bryanc3",
+            "role": "Mid"
+        },
+        {
+            "name": "Edge Of Zed",
+            "role": "Mid"
+        },
+        {
+            "name": "zyralesbian",
+            "role": "Mid"
+        },
+        {
+            "name": "iiiusionist",
+            "role": "Mid+"
+        },
+        {
+            "name": "wingsofdeath",
+            "role": "Mid+"
+        },
+        {
+            "name": "avantilol",
+            "role": "Mid"
+        },
+        {
+            "name": "chounted",
+            "role": "Mid+"
+        },
+        {
+            "name": "xiohlol",
+            "role": "Mid"
+        },
+        {
+            "name": "souler0204",
+            "role": "Mid"
+        },
+        {
+            "name": "n4rt0n",
+            "role": "Mid"
+        },
+        {
+            "name": "huzzygames",
+            "role": "Mid"
+        },
+        {
+            "name": "davidschleigh",
+            "role": "Mid"
+        },
+        {
+            "name": "kbvtv",
+            "role": "Mid"
+        },
+        {
+            "name": "coachakali",
+            "role": "Mid"
+        },
+        {
+            "name": "ozoss13",
+            "role": "Mid"
+        },
+        {
+            "name": "fatefalls",
+            "role": "Mid"
+        },
+        {
+            "name": "risti",
+            "role": "Mid"
+        },
+        {
+            "name": "Killikan",
+            "role": "Mid"
+        },
+        {
+            "name": "SoulTran",
+            "role": "Mid+"
+        },
+        {
+            "name": "overlordforte",
+            "role": "Mid"
+        },
+        {
+            "name": "eoba",
+            "role": "Mid"
+        },
+        {
+            "name": "Gross Gore",
+            "role": "Mid"
+        },
+        {
+            "name": "azoh",
+            "role": "Mid"
+        },
+        {
+            "name": "redmercylol",
+            "role": "Mid"
+        },
+        {
+            "name": "kaiceytronn",
+            "role": "Mid"
+        },
+        {
+            "name": "Jigsaw",
+            "role": "Mid"
+        },
+        {
+            "name": "munchiezz",
+            "role": "Mid+"
+        },
+        {
+            "name": "hawks4848",
+            "role": "Mid"
+        },
+        {
+            "name": "kinoscorpia",
+            "role": "Mid"
+        },
+        {
+            "name": "part_the_sea",
+            "role": "Mid+"
+        },
+        {
+            "name": "shikai70",
+            "role": "Mid+"
+        },
+        {
+            "name": "bestahrimid_",
+            "role": "Mid"
+        },
+        {
+            "name": "trizze",
+            "role": "Mid"
+        },
+        {
+            "name": "lyaphine",
+            "role": "Mid"
+        },
+        {
+            "name": "fnatkgaming",
+            "role": "Mid+"
+        },
+        {
+            "name": "TheGatorMan",
+            "role": "Mid+"
+        },
+        {
+            "name": "syte_ryze",
+            "role": "Mid+"
+        },
+        {
+            "name": "taliyah_support",
+            "role": "Mid+"
+        },
+        {
+            "name": "Yasukeh",
+            "role": "Mid"
+        },
+        {
+            "name": "sardochelol",
+            "role": "Mid"
+        },
+        {
+            "name": "hardondonger",
+            "role": "Mid+"
+        },
+        {
+            "name": "thezileangod",
+            "role": "Mid+"
+        },
+        {
+            "name": "King Jebus",
+            "role": "Mid"
+        },
+        {
+            "name": "pokimane",
+            "role": "Mid+"
+        },
+        {
+            "name": "notesyk",
+            "role": "Mid"
+        },
+        {
+            "name": "shrosen",
+            "role": "Mid"
+        },
+        {
+            "name": "alexkabam",
+            "role": "Mid"
+        },
+        {
+            "name": "rbkchoi",
+            "role": "Mid"
+        },
+        {
+            "name": "lpgjustjohnny",
+            "role": "Mid"
+        },
+        {
+            "name": "elijahanivia",
+            "role": "Mid"
+        },
+        {
+            "name": "rezonegames",
+            "role": "Mid+"
+        },
+        {
+            "name": "Aqua Dragon",
+            "role": "Mid+"
+        },
+        {
+            "name": "mezzplays",
+            "role": "Mid"
+        },
+        {
+            "name": "plasma_lemon",
+            "role": "Mid"
+        },
+        {
+            "name": "bojano2",
+            "role": "Mid"
+        },
+        {
+            "name": "xoxxox_",
+            "role": "Mid"
+        },
+        {
+            "name": "richilucky",
+            "role": "Mid"
+        },
+        {
+            "name": "EisohneWaffel",
+            "role": "Mid"
+        },
+        {
+            "name": "healthyspoongg",
+            "role": "Mid"
+        },
+        {
+            "name": "heracles8",
+            "role": "Mid"
+        },
+        {
+            "name": "sp4zie",
+            "role": "Mid+"
+        },
+        {
+            "name": "far_struck",
+            "role": "Mid"
+        },
+        {
+            "name": "cazzic",
+            "role": "Mid+"
+        },
+        {
+            "name": "evilcatstorm",
+            "role": "Mid"
+        },
+        {
+            "name": "zpancaku",
+            "role": "Mid"
+        },
+        {
+            "name": "tronrs",
+            "role": "Mid"
+        },
+        {
+            "name": "fluumis123",
+            "role": "Mid+"
+        },
+        {
+            "name": "yozu",
+            "role": "Mid"
+        },
+        {
+            "name": "thebearsnatcher",
+            "role": "Mid"
+        },
+        {
+            "name": "Bang",
+            "role": "ADC"
+        },
+        {
+            "name": "Ruler",
+            "role": "ADC"
+        },
+        {
+            "name": "Sneaky",
+            "role": "ADC"
+        },
+        {
+            "name": "Keith",
+            "role": "ADC"
+        },
+        {
+            "name": "Shynon",
+            "role": "ADC"
+        },
+        {
+            "name": "Cody Sun",
+            "role": "ADC"
+        },
+        {
+            "name": "Apollo",
+            "role": "ADC"
+        },
+        {
+            "name": "WildTurtle",
+            "role": "ADC"
+        },
+        {
+            "name": "Doublelift",
+            "role": "ADC"
+        },
+        {
+            "name": "Deftly",
+            "role": "ADC"
+        },
+        {
+            "name": "Arrow",
+            "role": "ADC"
+        },
+        {
+            "name": "Rekkles",
+            "role": "ADC"
+        },
+        {
+            "name": "Stixxay",
+            "role": "ADC"
+        },
+        {
+            "name": "Auto",
+            "role": "ADC"
+        },
+        {
+            "name": "Steeelback",
+            "role": "ADC"
+        },
+        {
+            "name": "MrRallez",
+            "role": "ADC"
+        },
+        {
+            "name": "Rikara",
+            "role": "ADC"
+        },
+        {
+            "name": "Erry",
+            "role": "ADC"
+        },
+        {
+            "name": "Kobbe",
+            "role": "ADC"
+        },
+        {
+            "name": "Zven",
+            "role": "ADC"
+        },
+        {
+            "name": "Hans Sama",
+            "role": "ADC"
+        },
+        {
+            "name": "NL",
+            "role": "ADC"
+        },
+        {
+            "name": "Piglet",
+            "role": "ADC"
+        },
+        {
+            "name": "Jurassiq",
+            "role": "ADC"
+        },
+        {
+            "name": "Shoryu",
+            "role": "ADC"
+        },
+        {
+            "name": "brtt",
+            "role": "ADC"
+        },
+        {
+            "name": "Altec",
+            "role": "ADC"
+        },
+        {
+            "name": "Deft",
+            "role": "ADC"
+        },
+        {
+            "name": "Sangyoon",
+            "role": "ADC"
+        },
+        {
+            "name": "Imp",
+            "role": "ADC"
+        },
+        {
+            "name": "Benji",
+            "role": "ADC"
+        },
+        {
+            "name": "Cookie",
+            "role": "ADC"
+        },
+        {
+            "name": "Breeze",
+            "role": "ADC"
+        },
+        {
+            "name": "Upset",
+            "role": "ADC"
+        },
+        {
+            "name": "Veritas",
+            "role": "ADC"
+        },
+        {
+            "name": "imaqtpie",
+            "role": "ADC"
+        },
+        {
+            "name": "cop",
+            "role": "ADC"
+        },
+        {
+            "name": "mash",
+            "role": "ADC"
+        },
+        {
+            "name": "forg1venapm",
+            "role": "ADC"
+        },
+        {
+            "name": "youngbiin",
+            "role": "ADC"
+        },
+        {
+            "name": "fable687",
+            "role": "ADC"
+        },
+        {
+            "name": "freezecz",
+            "role": "ADC"
+        },
+        {
+            "name": "Luger",
+            "role": "ADC"
+        },
+        {
+            "name": "Bebe",
+            "role": "ADC"
+        },
+        {
+            "name": "Motroco",
+            "role": "ADC"
+        },
+        {
+            "name": "based_yoona",
+            "role": "ADC"
+        },
+        {
+            "name": "wakawakawak",
+            "role": "ADC"
+        },
+        {
+            "name": "xfsn_saber",
+            "role": "ADC"
+        },
+        {
+            "name": "cookielol9",
+            "role": "ADC"
+        },
+        {
+            "name": "sa1na",
+            "role": "ADC"
+        },
+        {
+            "name": "Cake",
+            "role": "ADC"
+        },
+        {
+            "name": "lactea",
+            "role": "ADC"
+        },
+        {
+            "name": "sohnarlol",
+            "role": "ADC"
+        },
+        {
+            "name": "data915",
+            "role": "ADC"
+        },
+        {
+            "name": "fenglolna",
+            "role": "ADC"
+        },
+        {
+            "name": "samsung1215",
+            "role": "ADC"
+        },
+        {
+            "name": "prismal_lol",
+            "role": "ADC"
+        },
+        {
+            "name": "grayhoves",
+            "role": "ADC"
+        },
+        {
+            "name": "monkwillcarry",
+            "role": "ADC"
+        },
+        {
+            "name": "value420",
+            "role": "ADC"
+        },
+        {
+            "name": "noahmost",
+            "role": "ADC"
+        },
+        {
+            "name": "markisa13",
+            "role": "ADC"
+        },
+        {
+            "name": "thdarkside",
+            "role": "ADC"
+        },
+        {
+            "name": "carritoskami",
+            "role": "ADC"
+        },
+        {
+            "name": "realitilt",
+            "role": "ADC"
+        },
+        {
+            "name": "hastad",
+            "role": "ADC"
+        },
+        {
+            "name": "sayraid",
+            "role": "ADC"
+        },
+        {
+            "name": "exdee_face",
+            "role": "ADC"
+        },
+        {
+            "name": "k041710",
+            "role": "ADC"
+        },
+        {
+            "name": "solary",
+            "role": "ADC+"
+        },
+        {
+            "name": "jummychu",
+            "role": "ADC"
+        },
+        {
+            "name": "riceballs",
+            "role": "ADC+"
+        },
+        {
+            "name": "mysoul4donuts",
+            "role": "ADC"
+        },
+        {
+            "name": "lolGDog",
+            "role": "ADC"
+        },
+        {
+            "name": "A Wild AP Sona",
+            "role": "ADC+"
+        },
+        {
+            "name": "braxas19",
+            "role": "ADC"
+        },
+        {
+            "name": "mushisgosu",
+            "role": "ADC"
+        },
+        {
+            "name": "Mactor",
+            "role": "ADC"
+        },
+        {
+            "name": "Miazma",
+            "role": "ADC"
+        },
+        {
+            "name": "Pornstarzilean",
+            "role": "ADC"
+        },
+        {
+            "name": "Counter",
+            "role": "ADC"
+        },
+        {
+            "name": "DanielRMC",
+            "role": "ADC"
+        },
+        {
+            "name": "lolgeranimo",
+            "role": "ADC"
+        },
+        {
+            "name": "lolartemis",
+            "role": "ADC"
+        },
+        {
+            "name": "shantao",
+            "role": "ADC"
+        },
+        {
+            "name": "credit_euw",
+            "role": "ADC"
+        },
+        {
+            "name": "saradax",
+            "role": "ADC"
+        },
+        {
+            "name": "robertxlee",
+            "role": "ADC"
+        },
+        {
+            "name": "teamluketv",
+            "role": "ADC"
+        },
+        {
+            "name": "countthugulaman",
+            "role": "ADC"
+        },
+        {
+            "name": "errortom",
+            "role": "ADC"
+        },
+        {
+            "name": "proxitytrizzz",
+            "role": "ADC"
+        },
+        {
+            "name": "can1ski",
+            "role": "ADC"
+        },
+        {
+            "name": "dragonminkim",
+            "role": "ADC+"
+        },
+        {
+            "name": "Captain Knugen",
+            "role": "ADC"
+        },
+        {
+            "name": "xemortv",
+            "role": "ADC+"
+        },
+        {
+            "name": "broeki1",
+            "role": "ADC"
+        },
+        {
+            "name": "LL Trigger",
+            "role": "ADC"
+        },
+        {
+            "name": "ofgsaiph",
+            "role": "ADC"
+        },
+        {
+            "name": "camadc",
+            "role": "ADC"
+        },
+        {
+            "name": "notwillxo",
+            "role": "ADC"
+        },
+        {
+            "name": "Tai",
+            "role": "ADC"
+        },
+        {
+            "name": "photographna",
+            "role": "ADC"
+        },
+        {
+            "name": "jackspektra",
+            "role": "ADC"
+        },
+        {
+            "name": "loltyler1",
+            "role": "ADC"
+        },
+        {
+            "name": "ikeepittaco",
+            "role": "ADC"
+        },
+        {
+            "name": "missingyew",
+            "role": "ADC"
+        },
+        {
+            "name": "pwnedbynighty",
+            "role": "ADC"
+        },
+        {
+            "name": "zergy",
+            "role": "ADC"
+        },
+        {
+            "name": "lollagsalot",
+            "role": "ADC"
+        },
+        {
+            "name": "hoofspark",
+            "role": "ADC"
+        },
+        {
+            "name": "sysnickl",
+            "role": "ADC"
+        },
+        {
+            "name": "munchiezz",
+            "role": "ADC"
+        },
+        {
+            "name": "ruwich",
+            "role": "ADC"
+        },
+        {
+            "name": "iwaskidding",
+            "role": "ADC"
+        },
+        {
+            "name": "mamfarta",
+            "role": "ADC"
+        },
+        {
+            "name": "Chubbzilla",
+            "role": "ADC"
+        },
+        {
+            "name": "loldroven",
+            "role": "ADC"
+        },
+        {
+            "name": "Jhinsane",
+            "role": "ADC"
+        },
+        {
+            "name": "Xynthaos",
+            "role": "ADC"
+        },
+        {
+            "name": "kurosawalol",
+            "role": "ADC+"
+        },
+        {
+            "name": "anklespankin",
+            "role": "ADC"
+        },
+        {
+            "name": "drunkev",
+            "role": "ADC"
+        },
+        {
+            "name": "chrisshin",
+            "role": "ADC"
+        },
+        {
+            "name": "rhux",
+            "role": "ADC"
+        },
+        {
+            "name": "hi_im_schwifty",
+            "role": "ADC"
+        },
+        {
+            "name": "locodoco",
+            "role": "ADC"
+        },
+        {
+            "name": "jaeyoong",
+            "role": "ADC"
+        },
+        {
+            "name": "solaaaa",
+            "role": "ADC"
+        },
+        {
+            "name": "foquitaa",
+            "role": "ADC"
+        },
+        {
+            "name": "gpwnjustcarry",
+            "role": "ADC"
+        },
+        {
+            "name": "ixs2xu",
+            "role": "ADC"
+        },
+        {
+            "name": "Aqua Dragon",
+            "role": "ADC+"
+        },
+        {
+            "name": "The Tranimal",
+            "role": "ADC"
+        },
+        {
+            "name": "ivernadero",
+            "role": "ADC"
+        },
+        {
+            "name": "phreakstream",
+            "role": "ADC"
+        },
+        {
+            "name": "exhale96",
+            "role": "ADC"
+        },
+        {
+            "name": "satysiients",
+            "role": "ADC"
+        },
+        {
+            "name": "lunameow",
+            "role": "ADC"
+        },
+        {
+            "name": "cazzic",
+            "role": "ADC+"
+        },
+        {
+            "name": "hideto",
+            "role": "ADC"
+        },
+        {
+            "name": "Floodz",
+            "role": "ADC"
+        },
+        {
+            "name": "Wolf",
+            "role": "Sup"
+        },
+        {
+            "name": "CoreJJ",
+            "role": "Sup"
+        },
+        {
+            "name": "Gorilla",
+            "role": "Sup"
+        },
+        {
+            "name": "Key",
+            "role": "Sup"
+        },
+        {
+            "name": "Snowflower",
+            "role": "Sup"
+        },
+        {
+            "name": "Smoothie",
+            "role": "Sup"
+        },
+        {
+            "name": "Biofrost",
+            "role": "Sup"
+        },
+        {
+            "name": "Aphromoo",
+            "role": "Sup"
+        },
+        {
+            "name": "Adrian",
+            "role": "Sup"
+        },
+        {
+            "name": "Matt",
+            "role": "Sup"
+        },
+        {
+            "name": "Albis",
+            "role": "Sup"
+        },
+        {
+            "name": "Xpecial",
+            "role": "Sup"
+        },
+        {
+            "name": "Olleh",
+            "role": "Sup"
+        },
+        {
+            "name": "Stunt",
+            "role": "Sup"
+        },
+        {
+            "name": "Kasing",
+            "role": "Sup"
+        },
+        {
+            "name": "Mikyx",
+            "role": "Sup"
+        },
+        {
+            "name": "Vander",
+            "role": "Sup"
+        },
+        {
+            "name": "Mithy",
+            "role": "Sup"
+        },
+        {
+            "name": "Hakuho",
+            "role": "Sup"
+        },
+        {
+            "name": "Whyin",
+            "role": "Sup"
+        },
+        {
+            "name": "Zeyzal",
+            "role": "Sup"
+        },
+        {
+            "name": "Vulcan",
+            "role": "Sup"
+        },
+        {
+            "name": "Fill",
+            "role": "Sup"
+        },
+        {
+            "name": "PapaChau",
+            "role": "Sup"
+        },
+        {
+            "name": "JayJ",
+            "role": "Sup"
+        },
+        {
+            "name": "Joey",
+            "role": "Sup"
+        },
+        {
+            "name": "Shady",
+            "role": "Sup"
+        },
+        {
+            "name": "LustBoy",
+            "role": "Sup"
+        },
+        {
+            "name": "Dumbledoge",
+            "role": "Sup"
+        },
+        {
+            "name": "Gorilla",
+            "role": "Sup"
+        },
+        {
+            "name": "Mata",
+            "role": "Sup"
+        },
+        {
+            "name": "Revanche",
+            "role": "Sup"
+        },
+        {
+            "name": "Winter",
+            "role": "Sup"
+        },
+        {
+            "name": "kiwikid",
+            "role": "Sup"
+        },
+        {
+            "name": "lol_madlife",
+            "role": "Sup"
+        },
+        {
+            "name": "bunnyfufuu",
+            "role": "Sup"
+        },
+        {
+            "name": "idolmariya",
+            "role": "Sup"
+        },
+        {
+            "name": "lolhybrid",
+            "role": "Sup"
+        },
+        {
+            "name": "krepo",
+            "role": "Sup"
+        },
+        {
+            "name": "Trance",
+            "role": "Sup"
+        },
+        {
+            "name": "Gate",
+            "role": "Sup"
+        },
+        {
+            "name": "Noxiak",
+            "role": "Sup"
+        },
+        {
+            "name": "klajbajk",
+            "role": "Sup"
+        },
+        {
+            "name": "Likkrit",
+            "role": "Sup"
+        },
+        {
+            "name": "solvanas",
+            "role": "Sup"
+        },
+        {
+            "name": "Hanjaro",
+            "role": "Sup"
+        },
+        {
+            "name": "Painless",
+            "role": "Sup"
+        },
+        {
+            "name": "turkish_coffee",
+            "role": "Sup"
+        },
+        {
+            "name": "swiftelol",
+            "role": "Sup"
+        },
+        {
+            "name": "Pants Are Dragon",
+            "role": "Sup+"
+        },
+        {
+            "name": "sirnukesabit",
+            "role": "Sup"
+        },
+        {
+            "name": "executionerken",
+            "role": "Sup"
+        },
+        {
+            "name": "menohaxor",
+            "role": "Sup"
+        },
+        {
+            "name": "lohpally",
+            "role": "Sup"
+        },
+        {
+            "name": "celend",
+            "role": "Sup+"
+        },
+        {
+            "name": "tdollasakatmoney",
+            "role": "Sup"
+        },
+        {
+            "name": "jesiz",
+            "role": "Sup"
+        },
+        {
+            "name": "nwoks",
+            "role": "Sup"
+        },
+        {
+            "name": "vincentslol",
+            "role": "Sup"
+        },
+        {
+            "name": "ebihurya",
+            "role": "Sup+"
+        },
+        {
+            "name": "jaykeoce",
+            "role": "Sup"
+        },
+        {
+            "name": "wlllywonkagg",
+            "role": "Sup"
+        },
+        {
+            "name": "damage97",
+            "role": "Sup"
+        },
+        {
+            "name": "robslol",
+            "role": "Sup"
+        },
+        {
+            "name": "whiteripper25",
+            "role": "Sup"
+        },
+        {
+            "name": "iamcraftr",
+            "role": "Sup"
+        },
+        {
+            "name": "solary",
+            "role": "Sup+"
+        },
+        {
+            "name": "rencha",
+            "role": "Sup+"
+        },
+        {
+            "name": "jannamechanics",
+            "role": "Sup"
+        },
+        {
+            "name": "paoloidolo",
+            "role": "Sup"
+        },
+        {
+            "name": "Duoking1",
+            "role": "Sup"
+        },
+        {
+            "name": "riceballs",
+            "role": "Sup+"
+        },
+        {
+            "name": "Sawyer",
+            "role": "Sup"
+        },
+        {
+            "name": "Pray Support",
+            "role": "Sup"
+        },
+        {
+            "name": "reiroux",
+            "role": "Sup"
+        },
+        {
+            "name": "ensignledolol",
+            "role": "Sup+"
+        },
+        {
+            "name": "taremoz",
+            "role": "Sup"
+        },
+        {
+            "name": "willr0",
+            "role": "Sup"
+        },
+        {
+            "name": "seazsama",
+            "role": "Sup"
+        },
+        {
+            "name": "tlsquints",
+            "role": "Sup"
+        },
+        {
+            "name": "hoomanpro",
+            "role": "Sup"
+        },
+        {
+            "name": "mutatie",
+            "role": "Sup"
+        },
+        {
+            "name": "yathatwasabanana",
+            "role": "Sup"
+        },
+        {
+            "name": "rayskat",
+            "role": "Sup"
+        },
+        {
+            "name": "Champloo",
+            "role": "Sup"
+        },
+        {
+            "name": "quicktimer45",
+            "role": "Sup"
+        },
+        {
+            "name": "aodzilla",
+            "role": "Sup"
+        },
+        {
+            "name": "lolmeowingcat",
+            "role": "Sup"
+        },
+        {
+            "name": "remiik618",
+            "role": "Sup"
+        },
+        {
+            "name": "automobilev",
+            "role": "Sup"
+        },
+        {
+            "name": "qeeknique",
+            "role": "Sup"
+        },
+        {
+            "name": "shajaetv",
+            "role": "Sup"
+        },
+        {
+            "name": "gnawme",
+            "role": "Sup"
+        },
+        {
+            "name": "Blown By Janna",
+            "role": "Sup"
+        },
+        {
+            "name": "sonaobsessee",
+            "role": "Sup"
+        },
+        {
+            "name": "morningbaconbits",
+            "role": "Sup"
+        },
+        {
+            "name": "king_taric",
+            "role": "Sup"
+        },
+        {
+            "name": "magazine",
+            "role": "Sup"
+        },
+        {
+            "name": "rayskat",
+            "role": "Sup"
+        },
+        {
+            "name": "raigarak",
+            "role": "Sup"
+        },
+        {
+            "name": "melyn",
+            "role": "Sup"
+        },
+        {
+            "name": "Lilyane",
+            "role": "Sup"
+        },
+        {
+            "name": "CJ Savino",
+            "role": "Sup"
+        },
+        {
+            "name": "CrackOpenACold1",
+            "role": "Sup"
+        },
+        {
+            "name": "realtrow",
+            "role": "Sup"
+        },
+        {
+            "name": "blueguilmon",
+            "role": "Sup"
+        },
+        {
+            "name": "na_kirby",
+            "role": "Sup"
+        },
+        {
+            "name": "nylanaaa",
+            "role": "Sup"
+        },
+        {
+            "name": "meckii",
+            "role": "Sup"
+        },
+        {
+            "name": "riyuuka",
+            "role": "Sup"
+        },
+        {
+            "name": "ozoss13",
+            "role": "Sup"
+        },
+        {
+            "name": "drawleks",
+            "role": "Sup"
+        },
+        {
+            "name": "feviknight",
+            "role": "Sup"
+        },
+        {
+            "name": "iamarray",
+            "role": "Sup"
+        },
+        {
+            "name": "nureha",
+            "role": "Sup"
+        },
+        {
+            "name": "i0ki",
+            "role": "Sup"
+        },
+        {
+            "name": "rhaxxl",
+            "role": "Sup"
+        },
+        {
+            "name": "yokalive",
+            "role": "Sup"
+        },
+        {
+            "name": "d0rkls",
+            "role": "Sup"
+        },
+        {
+            "name": "Doctor Nash",
+            "role": "Sup"
+        },
+        {
+            "name": "Sloganmaker",
+            "role": "Sup"
+        },
+        {
+            "name": "simonhawkes",
+            "role": "Sup"
+        },
+        {
+            "name": "elinyah",
+            "role": "Sup"
+        },
+        {
+            "name": "bluesonne",
+            "role": "Sup"
+        },
+        {
+            "name": "soulotv",
+            "role": "Sup"
+        },
+        {
+            "name": "carljohan321",
+            "role": "Sup"
+        },
+        {
+            "name": "bizzleberry",
+            "role": "Sup"
+        },
+        {
+            "name": "s4mpp",
+            "role": "Sup"
+        },
+        {
+            "name": "t3hstar",
+            "role": "Sup"
+        },
+        {
+            "name": "Sora",
+            "role": "Sup"
+        },
+        {
+            "name": "narjanna",
+            "role": "Sup"
+        },
+        {
+            "name": "dearestlol",
+            "role": "Sup"
+        },
+        {
+            "name": "subzeroark",
+            "role": "Sup"
+        },
+        {
+            "name": "sleeeepylol",
+            "role": "Sup"
+        },
+        {
+            "name": "taliyah_support",
+            "role": "Sup+"
+        },
+        {
+            "name": "AndrewInTheLane",
+            "role": "Sup+"
+        },
+        {
+            "name": "xeptron",
+            "role": "Sup"
+        },
+        {
+            "name": "gamzortm",
+            "role": "Sup"
+        },
+        {
+            "name": "the_eggsalad",
+            "role": "Sup"
+        },
+        {
+            "name": "thezileangod",
+            "role": "Sup"
+        },
+        {
+            "name": "terrorearl",
+            "role": "Sup"
+        },
+        {
+            "name": "Snowballing Nunu",
+            "role": "Sup"
+        },
+        {
+            "name": "jaylinkin",
+            "role": "Sup"
+        },
+        {
+            "name": "mr_domoarigato",
+            "role": "Sup"
+        },
+        {
+            "name": "redghostwolf",
+            "role": "Sup"
+        },
+        {
+            "name": "suguha_",
+            "role": "Sup"
+        },
+        {
+            "name": "void_caller",
+            "role": "Sup"
+        },
+        {
+            "name": "pokimane",
+            "role": "Sup"
+        },
+        {
+            "name": "doorscanopen",
+            "role": "Sup"
+        },
+        {
+            "name": "lutem",
+            "role": "Sup"
+        },
+        {
+            "name": "Aqua Dragon",
+            "role": "Sup"
+        },
+        {
+            "name": "spydergts",
+            "role": "Sup"
+        },
+        {
+            "name": "claveslol",
+            "role": "Sup"
+        },
+        {
+            "name": "awkwardafro",
+            "role": "Sup"
+        },
+        {
+            "name": "ryswick",
+            "role": "Sup"
+        },
+        {
+            "name": "belkarama",
+            "role": "Sup"
+        },
+        {
+            "name": "mossyibis",
+            "role": "Sup"
+        },
+        {
+            "name": "Windforce",
+            "role": "Sup"
+        },
+        {
+            "name": "koangie",
+            "role": "Sup"
+        },
+        {
+            "name": "zsyker",
+            "role": "Sup"
+        },
+        {
+            "name": "lolpaige",
+            "role": "Sup"
+        },
+        {
+            "name": "Kutcher",
+            "role": "Sup"
+        },
+        {
+            "name": "dynamis1",
+            "role": "Sup"
+        },
+        {
+            "name": "dustz92",
+            "role": "Sup"
+        },
+        {
+            "name": "msscoeur",
+            "role": "Sup"
+        },
+        {
+            "name": "jonthekhan",
+            "role": "Sup"
+        },
+        {
+            "name": "fluumis123",
+            "role": "Sup"
+        },
+        {
+            "name": "thestonebouncer",
+            "role": "Sup"
+        },
+        {
+            "name": "biffymcsniff",
+            "role": "Sup"
+        },
+        {
+            "name": "ellumina",
+            "role": "Sup"
+        },
+        {
+            "name": "ごっふぃ",
+            "role": "Fill"
+        }
+    ]
+}
