@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: lolhub-deployment
+  labels:
+    app: lolhub
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lolhub
+  template:
+    metadata:
+      labels:
+        app: lolhub
+    spec:
+      containers:
+      - name: lolhub-server
+        image: jungj5/lol-hub:0.0.1-server

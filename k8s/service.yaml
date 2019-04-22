@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: lolhub-service
+spec:
+  selector:
+    app: lolhub
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 1337
