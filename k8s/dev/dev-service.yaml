@@ -1,10 +1,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: lolhub-service
+  name: lolhub-dev-service
 spec:
   selector:
-    app: lolhub
+    app: lolhub-dev
   ports:
   - protocol: TCP
     port: 80
