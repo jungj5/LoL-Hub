@@ -1,0 +1,23 @@
+{
+  "name": "utils",
+  "version": "0.0.1",
+  "description": "Utils for LoL Hub",
+  "main": "app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jungj5/LoL-Hub.git"
+  },
+  "author": "jungj5",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jungj5/LoL-Hub/issues"
+  },
+  "homepage": "https://github.com/jungj5/LoL-Hub#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "cheerio-tableparser": "^1.0.1"
+  }
+}

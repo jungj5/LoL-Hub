@@ -10,7 +10,7 @@ rp(url)
     $ = cheerio.load(html);
     cheerioTableParser($);
     let data = $("table").parsetable(true,true,true)
-
+    // html del tags (false,false,false)
     let streamers = {
       'streamers': []
     }
