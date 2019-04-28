@@ -14,7 +14,7 @@ var port = Number(process.env.PORT) || 1337;
 */
 app.use(cors_1.default());
 app.get('/', function (req, res) {
-    res.send('I am alive! 🎉🎉🎉');
+    res.send('I am alive! 🎉🎉🎉🎉');
 });
 app.get('/test', function (req, res) {
     res.send({ "content": [

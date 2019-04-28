@@ -12,7 +12,7 @@ const port: number = Number(process.env.PORT) || 1337;
 app.use(cors());
 
 app.get('/', (req, res) => {
-  res.send('I am alive! 🎉🎉🎉');
+  res.send('I am alive! 🎉🎉🎉🎉');
 });
 
 app.get('/test', (req, res) => {
