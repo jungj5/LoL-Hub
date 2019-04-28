@@ -3,6 +3,9 @@ apiVersion: v1
 metadata:
   name: lolhub-service
   namespace: prod
+  labels:
+    keel.sh/policy: minor
+    keel.sh/trigger: poll
 spec:
   selector:
     app: lolhub

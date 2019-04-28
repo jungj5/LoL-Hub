@@ -5,6 +5,8 @@ metadata:
   namespace: prod
   labels:
     app: lolhub
+    keel.sh/policy: major
+    keel.sh/trigger: poll
 spec:
   replicas: 1
   selector:
@@ -17,4 +19,4 @@ spec:
     spec:
       containers:
       - name: lolhub-server
-        image: jungj5/lol-hub:0.0.1-server
+        image: jungj5/lol-hub:0.0.1-server-prod
