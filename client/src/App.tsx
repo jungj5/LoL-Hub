@@ -3,10 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
 import { render } from 'react-dom';
-// import { content } from './stubs/response1.json';
 
 interface ComponentState {
-  initialContent: Content[],
+  fullContent: Content[],
   content: Content[],
   selectedContentType: string,
   selectedRole: string
@@ -27,15 +26,15 @@ interface Content {
 };
 
 let streamers = new Map();
-streamers.set('jungle', ['Nightblue3', 'IWDominate']);
-streamers.set('adc', 'Doublelift');
+streamers.set('jungle', ['nightblue3', 'iwdominate']);
+streamers.set('adc', 'doublelift');
 
 class App extends Component<{}, ComponentState> {
   constructor(props: {}) {
     super(props);
 
     this.state = {
-      initialContent: [],
+      fullContent: [],
       content: [],
       selectedContentType: 'all',
       selectedRole: 'all'
@@ -48,26 +47,9 @@ class App extends Component<{}, ComponentState> {
       const content = res.data.content;
 
       this.setState({
-        initialContent: content,
+        fullContent: content,
         content: content
       });
-
-      // let content: Content[];
-      // fetch('localhost:1337/test')
-      // .then(response => response.json())
-      // .then(data => {
-      //   content = data.content;
-      //   this.setState({
-      //     initialContent: content,
-      //     content: content
-      //   });
-      // });
-      // setTimeout(() => {
-      //   this.setState({
-      //     initialContent: content, 
-      //     content: content
-      //   })
-      // }, 200);
 
     } catch (e) {
       console.log(e);
@@ -96,37 +78,49 @@ class App extends Component<{}, ComponentState> {
     }
   }
 
-  contentFilter = async (field: string, event: any) => {
-    await this.setState({[field]: event.target.value} as ComponentState);
-    let contentArray = this.state.initialContent;
+  contentFilter = async (/*field: string, event: any*/) => {
+    //await this.setState({[field]: event.target.value} as ComponentState);
+    let contentArray = this.state.fullContent;
     let selectedContentType = this.state.selectedContentType;
     let selectedRole = this.state.selectedRole;
 
-    if (selectedContentType === 'all' && selectedRole === 'all') {
-      this.setState({content: this.state.initialContent});
-    } else {
-      contentArray = this.filterByContentType(selectedContentType, contentArray);
-      contentArray = this.filterByRole(selectedRole, contentArray);
-      this.setState({content: contentArray});
-    }
+    contentArray = this.filterByContentType(selectedContentType, contentArray);
+    contentArray = this.filterByRole(selectedRole, contentArray);
+    this.setState({content: contentArray});
   }
 
   render = () => {
+
+    // let contentArray = this.state.fullContent;
+    // let selectedContentType = this.state.selectedContentType;
+    // let selectedRole = this.state.selectedRole;
+
+    // contentArray = this.filterByContentType(selectedContentType, contentArray);
+    // contentArray = this.filterByRole(selectedRole, contentArray);
+    // this.setState({content: contentArray});
+
     const results = this.state.content;
     return results.length > 0 ?
       this.renderResults(results) :
       this.renderLoading()
   }
 
+  /* https://stackoverflow.com/questions/42217579/data-binding-in-react */
   renderResults = (results: Content[]) => {
     return (
       <div>
-        <select name="selectedContentType" onChange={(event) => this.contentFilter('selectedContentType', event)}>
+        <select name="selectedContentType" value={this.state.selectedContentType} onChange={async (event) => {
+            await this.setState({selectedContentType: event.target.value});
+            this.contentFilter(/*'selectedContentType', event*/);
+          }}>
           <option value="all">All</option>
           <option value="youtube-video">Youtube Video</option>
           <option value="twitch-clip">Twitch Clip</option>
         </select>
-        <select name="selectedRole" onChange={(event) => this.contentFilter('selectedRole', event)}>
+        <select name="selectedRole" value={this.state.selectedRole} onChange={async (event) => {
+          await this.setState({selectedRole: event.target.value});
+          this.contentFilter(/*'selectedRole', event*/);
+        }}>
           <option value ="all">All</option>
           <option value="jungle">jungle</option>
           <option value="adc">adc</option>
@@ -178,3 +172,8 @@ export default App;
 // Read up on these!!
 
 // React developer tools <-- get dis
+
+
+/*
+Data Binding in React
+*/
