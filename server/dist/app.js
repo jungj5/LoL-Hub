@@ -1,11 +1,48 @@
 "use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+var _this = this;
 Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = __importDefault(require("express"));
 var cors_1 = __importDefault(require("cors"));
-//import { content } from '../data/response1.json';
+var get_content_1 = require("./get-content");
+;
 var app = express_1.default();
 var port = Number(process.env.PORT) || 1337;
 /*
@@ -14,75 +51,26 @@ var port = Number(process.env.PORT) || 1337;
 */
 app.use(cors_1.default());
 app.get('/', function (req, res) {
-    res.send('I am alive! 🎉🎉🎉🎉');
+    res.send('I am alive! 🎉🎉🎉');
 });
-app.get('/test', function (req, res) {
-    res.send({ "content": [
-            {
-                "type": "youtube-video",
-                "videoId": "fs5cYAsSM40",
-                "title": "Doublelift - INSANE PLAYS MADE POSSIBLE BY UDOTGG (THAT'S U.GG)",
-                "thumbnailUrl": "https://i.ytimg.com/vi/fs5cYAsSM40/default.jpg",
-                "creatorName": "Doublelift",
-                "createdAt": "2019-03-31:04:30:37Z",
-                "embedLink": "https://www.youtube.com/embed/fs5cYAsSM40"
-            },
-            {
-                "type": "twitch-clip",
-                "videoId": "ReliableRamshackleCroissantCurseLit",
-                "title": "MikeYeung's baron pit escape tutorial.",
-                "thumbnailUrl": "https://clips-media-assets2.twitch.tv/AT-cm%7C428125954-preview-260x147.jpg",
-                "creatorName": "Riot Games",
-                "createdAt": "2019-03-29:03:30:37Z",
-                "embedLink": "https://clips.twitch.tv/embed?clip=ReliableRamshackleCroissantCurseLit&autoplay=false"
-            },
-            {
-                "type": "youtube-video",
-                "videoId": "1UB8jRU0waM",
-                "title": "TSM Doublelift Montage - League of Legends",
-                "thumbnailUrl": "https://i.ytimg.com/vi/1UB8jRU0waM/default.jpg",
-                "creatorName": "Doublelift",
-                "createdAt": "2019-11-17:04:44:47Z",
-                "embedLink": "https://www.youtube.com/embed/1UB8jRU0waM"
-            },
-            {
-                "type": "twitch-clip",
-                "videoId": "FunFreezingChickenKappaPride",
-                "title": "Worlds Quarterfinals: SK Telecom T1 vs. Royal Never Give Up",
-                "thumbnailUrl": "https://clips-media-assets2.twitch.tv/23410850752-offset-15554-preview-260x147.jpg",
-                "creatorName": "Riot Games",
-                "createdAt": "2016-10-14:03:30:37Z",
-                "embedLink": "https://clips.twitch.tv/embed?clip=FunFreezingChickenKappaPride&autoplay=false"
-            },
-            {
-                "type": "youtube-video",
-                "videoId": "HZnP2yVK94A",
-                "title": "THAT SHOULDN'T HAVE HAPPENED...",
-                "thumbnailUrl": "https://i.ytimg.com/vi/HZnP2yVK94A/default.jpg",
-                "creatorName": "IWDominate",
-                "createdAt": "2019-04-07:04:44:47Z",
-                "embedLink": "https://www.youtube.com/embed/HZnP2yVK94A"
-            },
-            {
-                "type": "twitch-clip",
-                "videoId": "FairDarlingAirGuitarKlappa",
-                "title": "NB3 VS T2G",
-                "thumbnailUrl": "https://clips-media-assets2.twitch.tv/33571426192-offset-10090-preview-260x147.jpg",
-                "creatorName": "Nightblue3",
-                "createdAt": "2019-04-06:03:30:37Z",
-                "embedLink": "https://clips.twitch.tv/embed?clip=FairDarlingAirGuitarKlappa&autoplay=false"
-            },
-            {
-                "type": "twitch-clip",
-                "videoId": "DelightfulTalentedKeyboardTBCheesePull",
-                "title": "nuts",
-                "thumbnailUrl": "https://clips-media-assets2.twitch.tv/AT-cm%7C434275469-preview-260x147.jpg",
-                "creatorName": "Doublelift",
-                "createdAt": "2019-04-08:03:30:37Z",
-                "embedLink": "https://clips.twitch.tv/embed?clip=DelightfulTalentedKeyboardTBCheesePull&autoplay=false"
-            }
-        ] });
-});
+// let content: Content[] = [];
+// setInterval(async () => {
+//   console.log('Content Updated!');
+//   content = await getContent();
+//   // console.log(content);
+// }, 15000);
+app.get('/test', function (req, res) { return __awaiter(_this, void 0, void 0, function () {
+    var content;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0: return [4 /*yield*/, get_content_1.getContent()];
+            case 1:
+                content = _a.sent();
+                res.send({ "content": content });
+                return [2 /*return*/];
+        }
+    });
+}); });
 app.listen(port, function () {
     console.log("Application is listening on port " + port + "!!");
 });
