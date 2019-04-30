@@ -1,5 +1,6 @@
 # dependencies
 /node_modules
+
 /dist
 
 # TODO: move contents of this gitignore to root dir
