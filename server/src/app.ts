@@ -30,16 +30,20 @@ app.get('/', (req, res) => {
   res.send('I am alive! 🎉🎉🎉');
 });
 
-// let content: Content[] = [];
-// setInterval(async () => {
-//   console.log('Content Updated!');
-//   content = await getContent();
-//   // console.log(content);
-// }, 15000);
+let content: Content[] = [];
+
+getContent().then((res) => {
+  content = res;
+});
+
+setInterval(async () => {
+  console.log('Content Updated!');
+  content = await getContent();
+}, 15000);
 
 
 app.get('/test', async (req, res) => {
-  const content = await getContent();
+  //const content = await getContent();
   res.send({ "content": content});
 });
 
