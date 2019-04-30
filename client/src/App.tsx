@@ -6,7 +6,6 @@ import { render } from 'react-dom';
 
 interface ComponentState {
   fullContent: Content[],
-  content: Content[],
   selectedContentType: string,
   selectedRole: string
 }
@@ -35,7 +34,6 @@ class App extends Component<{}, ComponentState> {
 
     this.state = {
       fullContent: [],
-      content: [],
       selectedContentType: 'all',
       selectedRole: 'all'
     };
@@ -47,8 +45,7 @@ class App extends Component<{}, ComponentState> {
       const content = res.data.content;
 
       this.setState({
-        fullContent: content,
-        content: content
+        fullContent: content
       });
 
     } catch (e) {
@@ -78,30 +75,17 @@ class App extends Component<{}, ComponentState> {
     }
   }
 
-  contentFilter = async (/*field: string, event: any*/) => {
-    //await this.setState({[field]: event.target.value} as ComponentState);
+  render = () => {
+
     let contentArray = this.state.fullContent;
     let selectedContentType = this.state.selectedContentType;
     let selectedRole = this.state.selectedRole;
 
     contentArray = this.filterByContentType(selectedContentType, contentArray);
     contentArray = this.filterByRole(selectedRole, contentArray);
-    this.setState({content: contentArray});
-  }
 
-  render = () => {
-
-    // let contentArray = this.state.fullContent;
-    // let selectedContentType = this.state.selectedContentType;
-    // let selectedRole = this.state.selectedRole;
-
-    // contentArray = this.filterByContentType(selectedContentType, contentArray);
-    // contentArray = this.filterByRole(selectedRole, contentArray);
-    // this.setState({content: contentArray});
-
-    const results = this.state.content;
-    return results.length > 0 ?
-      this.renderResults(results) :
+    return contentArray.length > 0 ?
+      this.renderResults(contentArray) :
       this.renderLoading()
   }
 
@@ -109,17 +93,15 @@ class App extends Component<{}, ComponentState> {
   renderResults = (results: Content[]) => {
     return (
       <div>
-        <select name="selectedContentType" value={this.state.selectedContentType} onChange={async (event) => {
-            await this.setState({selectedContentType: event.target.value});
-            this.contentFilter(/*'selectedContentType', event*/);
+        <select name="selectedContentType" value={this.state.selectedContentType} onChange={(event) => {
+            this.setState({selectedContentType: event.target.value});
           }}>
           <option value="all">All</option>
           <option value="youtube-video">Youtube Video</option>
           <option value="twitch-clip">Twitch Clip</option>
         </select>
-        <select name="selectedRole" value={this.state.selectedRole} onChange={async (event) => {
-          await this.setState({selectedRole: event.target.value});
-          this.contentFilter(/*'selectedRole', event*/);
+        <select name="selectedRole" value={this.state.selectedRole} onChange={(event) => {
+          this.setState({selectedRole: event.target.value});
         }}>
           <option value ="all">All</option>
           <option value="jungle">jungle</option>
