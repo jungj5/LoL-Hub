@@ -7,8 +7,23 @@ const youtubeAPI = new YoutubeDataAPI(YOUTUBE_API_KEY);
 const TWITCH_CLIENT_ID: string = process.env.TWITCH_CLIENT_ID as string;
 const TWITCH_CLIENT_SECRET: string = process.env.TWITCH_CLIENT_SECRET as string;
 
+interface Content {
+  type: string,
+  videoId: string,
+  title: string,
+  thumbnailUrl: string,
+  creatorName: string,
+  createdAt: string,
+  embedLink: string,
+  viewCount?: number,
+  redditInfo?: object,
+  videoClipInfo?: object,
+  upvotes?: number
+};
 
-const getYoutubeVideos = async () => {
+type FetchContentFunction = () => Promise<Content[]>;
+
+const getYoutubeVideos: FetchContentFunction = async () => {
   const doubleliftVids: any = await youtubeAPI.searchAll('Doublelift', 5, {type: 'video', channelId: 'UCrPCP1oaOr0AEs2JdxzfOFA'});
   const iwdVids: any = await youtubeAPI.searchAll('IWDominate', 5, {type: 'video', channelId: 'UCmEu9Y8nodUV0jvsR9NYLJA'});
   const content = [];
@@ -41,7 +56,7 @@ const getYoutubeVideos = async () => {
   return content;
 }
 
-const getTwitchClips = async () => {
+const getTwitchClips: FetchContentFunction = async () => {
   const twitchClient = await TwitchClient.withClientCredentials(TWITCH_CLIENT_ID, TWITCH_CLIENT_SECRET);
 
   const doubleliftRequest = twitchClient.helix.clips.getClipsForBroadcaster('40017619');
@@ -58,7 +73,7 @@ const getTwitchClips = async () => {
       'title': doubleliftClips[i].title,
       'thumbnailUrl': doubleliftClips[i].thumbnailUrl,
       'creatorName': doubleliftClips[i].broadcasterDisplayName.toLowerCase(),
-      'createdAt': doubleliftClips[i].creationDate,
+      'createdAt': doubleliftClips[i].creationDate.toString(),
       'embedLink': `${doubleliftClips[i].embedUrl}&autoplay=false`
     }
 
@@ -68,7 +83,7 @@ const getTwitchClips = async () => {
       'title': nb3Clips[i].title,
       'thumbnailUrl': nb3Clips[i].thumbnailUrl,
       'creatorName': nb3Clips[i].broadcasterDisplayName.toLowerCase(),
-      'createdAt': nb3Clips[i].creationDate,
+      'createdAt': nb3Clips[i].creationDate.toString(),
       'embedLink': `${nb3Clips[i].embedUrl}&autoplay=false`
     }
 
@@ -94,14 +109,9 @@ const shuffleArray = (content: any) => {
   return array;
 }
 
-export const getContent = async () => {
+export const getContent: FetchContentFunction = async () => {
   // const youtubeContent = await getYoutubeVideos();
   const twitchContent = await getTwitchClips();
   //const content = youtubeContent.concat(twitchContent);
   return shuffleArray(twitchContent);
 }
-
-
-/*
-TODO: convert this to class
-*/
