@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
-import { getContent } from './get-content'
+import { getContent } from './get-content';
+import * as streamers from './streamers.json';
 
 // Duplicated in client.. maybe move this into its own file?
 interface Content {
@@ -36,17 +37,19 @@ getContent().then((res) => {
   content = res;
 });
 
-setInterval(async () => {
-  console.log('Content Updated!');
-  content = await getContent();
-}, 15000);
-
+// setInterval(async () => {
+//   console.log('Content Updated!');
+//   content = await getContent();
+// }, 15000);
 
 app.get('/test', async (req, res) => {
-  //const content = await getContent();
+  const content = await getContent();
   res.send({ "content": content});
 });
 
+app.get('/streamers', async (req, res) => {
+  res.send(streamers);
+});
 
 app.listen(port, () => {
   console.log(`Application is listening on port ${port}!!`);

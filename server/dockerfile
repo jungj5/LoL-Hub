@@ -4,6 +4,7 @@ WORKDIR /app
 
 COPY package.json /app
 COPY /dist /app
+COPY /data/streamers.json /app
 RUN npm install
 CMD node app.js
 EXPOSE 1337

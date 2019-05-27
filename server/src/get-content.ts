@@ -23,75 +23,39 @@ interface Content {
 
 type FetchContentFunction = () => Promise<Content[]>;
 
-const getYoutubeVideos: FetchContentFunction = async () => {
-  const doubleliftVids: any = await youtubeAPI.searchAll('Doublelift', 5, {type: 'video', channelId: 'UCrPCP1oaOr0AEs2JdxzfOFA'});
-  const iwdVids: any = await youtubeAPI.searchAll('IWDominate', 5, {type: 'video', channelId: 'UCmEu9Y8nodUV0jvsR9NYLJA'});
-  const content = [];
+const convertData = (content: any, type: string) => {
+  let result = []
 
-  for (let i = 0; i < iwdVids.items.length; i++) {
-    let doubleliftVid = {
-      'type': 'youtube-video',
-      'videoId': doubleliftVids.items[i].id.videoId,
-      'title': doubleliftVids.items[i].snippet.title,
-      'thumbnailUrl': doubleliftVids.items[i].snippet.thumbnails.default.url,
-      'creatorName': doubleliftVids.items[i].snippet.channelTitle.toLowerCase(),
-      'createdAt': doubleliftVids.items[i].snippet.publishedAt,
-      'embedLink': `https://www.youtube.com/embed/${doubleliftVids.items[i].id.videoId}`
+  if (type === 'youtube-video') {
+    for (let i = 0; i < content.items.length; i++) {
+      let youtubeVid = {
+        'type': 'youtube-video',
+        'videoId': content.items[i].id.videoId,
+        'title': content.items[i].snippet.title,
+        'thumbnailUrl': content.items[i].snippet.thumbnails.default.url,
+        'creatorName': content.items[i].snippet.channelTitle.toLowerCase(),
+        'createdAt': content.items[i].snippet.publishedAt,
+        'embedLink': `https://www.youtube.com/embed/${content.items[i].id.videoId}`
+      };
+      result.push(youtubeVid);
     }
-
-    let iwdVid = {
-      'type': 'youtube-video',
-      'videoId': iwdVids.items[i].id.videoId,
-      'title': iwdVids.items[i].snippet.title,
-      'thumbnailUrl': iwdVids.items[i].snippet.thumbnails.default.url,
-      'creatorName': iwdVids.items[i].snippet.channelTitle.toLowerCase(),
-      'createdAt': iwdVids.items[i].snippet.publishedAt,
-      'embedLink': `https://www.youtube.com/embed/${iwdVids.items[i].id.videoId}`
+  } else if (type === 'twitch-clip') {
+    for (let i = 0; i < 5; i++) {
+      let twitchClip = {
+        'type': 'twitch-clip',
+        'videoId': content[i].id,
+        'title': content[i].title,
+        'thumbnailUrl': content[i].thumbnailUrl,
+        'creatorName': content[i].broadcasterDisplayName.toLowerCase(),
+        'createdAt': content[i].creationDate.toString(),
+        'embedLink': `${content[i].embedUrl}&autoplay=false`
+      };
+      result.push(twitchClip);
     }
-
-    content.push(doubleliftVid);
-    content.push(iwdVid);
+  } else {
+    console.log('Unknown type provided to converter function');
   }
-
-  return content;
-}
-
-const getTwitchClips: FetchContentFunction = async () => {
-  const twitchClient = await TwitchClient.withClientCredentials(TWITCH_CLIENT_ID, TWITCH_CLIENT_SECRET);
-
-  const doubleliftRequest = twitchClient.helix.clips.getClipsForBroadcaster('40017619');
-  const nb3Request = twitchClient.helix.clips.getClipsForBroadcaster('26946000');
-  const doubleliftClips: HelixClip[] = await doubleliftRequest.getNext();
-  const nb3Clips: HelixClip[] = await nb3Request.getNext();
-
-  const content = [];
-
-  for (let i = 0; i < 5; i++) {
-    let doubleliftClip = {
-      'type': 'twitch-clip',
-      'videoId': doubleliftClips[i].id,
-      'title': doubleliftClips[i].title,
-      'thumbnailUrl': doubleliftClips[i].thumbnailUrl,
-      'creatorName': doubleliftClips[i].broadcasterDisplayName.toLowerCase(),
-      'createdAt': doubleliftClips[i].creationDate.toString(),
-      'embedLink': `${doubleliftClips[i].embedUrl}&autoplay=false`
-    }
-
-    let nb3Clip = {
-      'type': 'twitch-clip',
-      'videoId': nb3Clips[i].id,
-      'title': nb3Clips[i].title,
-      'thumbnailUrl': nb3Clips[i].thumbnailUrl,
-      'creatorName': nb3Clips[i].broadcasterDisplayName.toLowerCase(),
-      'createdAt': nb3Clips[i].creationDate.toString(),
-      'embedLink': `${nb3Clips[i].embedUrl}&autoplay=false`
-    }
-
-    content.push(doubleliftClip);
-    content.push(nb3Clip);
-  }
-
-  return content;
+  return result;
 }
 
 /**
@@ -110,8 +74,24 @@ const shuffleArray = (content: any) => {
 }
 
 export const getContent: FetchContentFunction = async () => {
-  // const youtubeContent = await getYoutubeVideos();
-  const twitchContent = await getTwitchClips();
-  //const content = youtubeContent.concat(twitchContent);
-  return shuffleArray(twitchContent);
+
+
+  const twitchClient = await TwitchClient.withClientCredentials(TWITCH_CLIENT_ID, TWITCH_CLIENT_SECRET);
+
+  const doubleliftRequest = twitchClient.helix.clips.getClipsForBroadcaster('40017619');
+  const nb3Request = twitchClient.helix.clips.getClipsForBroadcaster('26946000');
+  const doubleliftClips: HelixClip[] = await doubleliftRequest.getNext();
+  const nb3Clips: HelixClip[] = await nb3Request.getNext();
+
+
+  const doubleliftVids: any = await youtubeAPI.searchAll('Doublelift', 5, {type: 'video', channelId: 'UCrPCP1oaOr0AEs2JdxzfOFA'});
+  const iwdVids: any = await youtubeAPI.searchAll('IWDominate', 5, {type: 'video', channelId: 'UCmEu9Y8nodUV0jvsR9NYLJA'});
+
+  const twitchClips = convertData(doubleliftClips, 'twitch-clip').concat(convertData(nb3Clips, 'twitch-clip'));
+  const youtubeVids = convertData(doubleliftVids, 'youtube-video').concat(convertData(iwdVids, 'youtube-video'));
+
+  let convertedData = [];
+  convertedData = twitchClips.concat(youtubeVids);
+
+  return shuffleArray(convertedData);
 }

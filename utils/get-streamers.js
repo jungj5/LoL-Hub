@@ -9,19 +9,23 @@ rp(url)
   .then(function(html){
     $ = cheerio.load(html);
     cheerioTableParser($);
-    let data = $("table").parsetable(true,true,true)
+    let data = $("table").parsetable(true,true,true);
+
     // html del tags (false,false,false)
+    let dataWithDelTags = $("table").parsetable(false,false,false);
     let streamers = {
       'streamers': []
     }
     for (let i = 1; i < data[0].length; i++) {
-      streamers.streamers.push({
-        'name': data[0][i],
-        'role': data[1][i]
-      });
+      if (!dataWithDelTags[0][i].includes("<del>") && !dataWithDelTags[0][i].includes("</del>")) {
+        streamers.streamers.push({
+          'name': data[0][i],
+          'role': data[1][i]
+        });
+      }
     }
 
-    fs.writeFileSync('../data/streamers.json', JSON.stringify(streamers, null, 4), (err) => {
+    fs.writeFileSync('../server/data/streamers.json', JSON.stringify(streamers, null, 4), (err) => {
       if (err) {
         console.log(err);
         return;
