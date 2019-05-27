@@ -25,8 +25,6 @@ interface Content {
 };
 
 let streamers = new Map();
-streamers.set('jungle', ['nightblue3', 'iwdominate']);
-streamers.set('adc', 'doublelift');
 
 class App extends Component<{}, ComponentState> {
   constructor(props: {}) {
@@ -43,6 +41,21 @@ class App extends Component<{}, ComponentState> {
     try {
       const res = await axios.get('http://localhost:1337/test');
       const content = res.data.content;
+
+      const streamersRes = await axios.get('http://localhost:1337/streamers');
+      const streamersArray = streamersRes.data.streamers
+
+      // Populating Streamers Map..
+      for (let i = 0; i < streamersArray.length; i++) {
+        const role = streamersArray[i].role.toLowerCase();
+        const name = streamersArray[i].name.toLowerCase();
+        if (!streamers.has(role)) {
+          streamers.set(role, new Set([name]));
+        } else {
+          const newStreamerEntry = streamers.get(role).add(name);
+          streamers.set(role, newStreamerEntry);
+        }
+      }
 
       this.setState({
         fullContent: content
@@ -69,7 +82,8 @@ class App extends Component<{}, ComponentState> {
       return contentArray;
     } else {
       const result = contentArray.filter((media) => {
-        return streamers.get(selectedRole).includes(media.creatorName);
+        // maybe do a fuzzy search (or some other equivalent) here instead of a strict string comparison?
+        return streamers.get(selectedRole).has(media.creatorName.toLowerCase());
       });
       return result;
     }
@@ -104,8 +118,11 @@ class App extends Component<{}, ComponentState> {
           this.setState({selectedRole: event.target.value});
         }}>
           <option value ="all">All</option>
-          <option value="jungle">jungle</option>
+          <option value="top">top</option>
+          <option value="jg">jg</option>
+          <option value="mid">mid</option>
           <option value="adc">adc</option>
+          <option value="sup">sup</option>
         </select>        
         <ul id="content_unordered_list">
           {results.map((result: Content) =>
