@@ -21,39 +21,64 @@ interface Content {
   upvotes?: number
 };
 
+interface TwitchData {
+  id: string,
+  title: string,
+  thumbnailUrl: string,
+  broadcasterDisplayName: string,
+  creationDate: Date,
+  embedUrl: string
+}
+
+interface YoutubeData {
+  snippet: {
+    title: string,
+    thumbnails: {
+      default: {
+        url: string
+      }
+    },
+    resourceId: {
+      videoId: string
+    },
+    channelTitle: string,
+    publishedAt: Date,
+  }
+}
+
 type FetchContentFunction = () => Promise<Content[]>;
 
-const convertData = (content: any, type: string) => {
+const convertYoutubeData = (content: YoutubeData[]) => {
   let result = []
+  for (let i = 0; i < content.length; i++) {
+    let youtubeVid = {
+      'type': 'youtube-video',
+      'videoId': content[i].snippet.resourceId.videoId,
+      'title': content[i].snippet.title,
+      'thumbnailUrl': content[i].snippet.thumbnails.default.url,
+      'creatorName': content[i].snippet.channelTitle.toLowerCase(),
+      'createdAt': content[i].snippet.publishedAt.toString(),
+      'embedLink': `https://www.youtube.com/embed/${content[i].snippet.resourceId.videoId}`
+    };
+    result.push(youtubeVid);
+  }
 
-  if (type === 'youtube-video') {
-    for (let i = 0; i < content.items.length; i++) {
-      let youtubeVid = {
-        'type': 'youtube-video',
-        'videoId': content.items[i].id.videoId,
-        'title': content.items[i].snippet.title,
-        'thumbnailUrl': content.items[i].snippet.thumbnails.default.url,
-        'creatorName': content.items[i].snippet.channelTitle.toLowerCase(),
-        'createdAt': content.items[i].snippet.publishedAt,
-        'embedLink': `https://www.youtube.com/embed/${content.items[i].id.videoId}`
-      };
-      result.push(youtubeVid);
-    }
-  } else if (type === 'twitch-clip') {
-    for (let i = 0; i < 5; i++) {
-      let twitchClip = {
-        'type': 'twitch-clip',
-        'videoId': content[i].id,
-        'title': content[i].title,
-        'thumbnailUrl': content[i].thumbnailUrl,
-        'creatorName': content[i].broadcasterDisplayName.toLowerCase(),
-        'createdAt': content[i].creationDate.toString(),
-        'embedLink': `${content[i].embedUrl}&autoplay=false`
-      };
-      result.push(twitchClip);
-    }
-  } else {
-    console.log('Unknown type provided to converter function');
+  return result;
+}
+
+const convertTwitchClipData = (content: TwitchData[]) => {
+  let result = [];
+  for (let i = 0; i < 5; i++) {
+    let twitchClip = {
+      'type': 'twitch-clip',
+      'videoId': content[i].id,
+      'title': content[i].title,
+      'thumbnailUrl': content[i].thumbnailUrl,
+      'creatorName': content[i].broadcasterDisplayName.toLowerCase(),
+      'createdAt': content[i].creationDate.toString(),
+      'embedLink': `${content[i].embedUrl}&autoplay=false`
+    };
+    result.push(twitchClip);
   }
   return result;
 }
@@ -63,7 +88,7 @@ const convertData = (content: any, type: string) => {
  * Using Durstenfeld (computer-optimized Fisher-Yates) shuffle algorithm.
  * https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
  */
-const shuffleArray = (content: any) => {
+const shuffleArray = (content: Content[]) => {
   // Don't want to update original array..
   let array = content;
   for (let i = array.length - 1; i > 0; i--) {
@@ -83,15 +108,23 @@ export const getContent: FetchContentFunction = async () => {
   const doubleliftClips: HelixClip[] = await doubleliftRequest.getNext();
   const nb3Clips: HelixClip[] = await nb3Request.getNext();
 
+  const doubleliftPlaylist: any = await youtubeAPI.searchPlaylistItems('UUrPCP1oaOr0AEs2JdxzfOFA', 10, {part: 'snippet'});
+  const doubleliftVids: YoutubeData[] = doubleliftPlaylist.items;
+  const imaqtpiePlaylist: any = await youtubeAPI.searchPlaylistItems('UUjyNFmk6Ionj9Lw9iIo9LtQ', 10, {part: 'snippet'})
+  const imaqtpieVids: YoutubeData[] = imaqtpiePlaylist.items;
 
-  const doubleliftVids: any = await youtubeAPI.searchAll('Doublelift', 5, {type: 'video', channelId: 'UCrPCP1oaOr0AEs2JdxzfOFA'});
-  const iwdVids: any = await youtubeAPI.searchAll('IWDominate', 5, {type: 'video', channelId: 'UCmEu9Y8nodUV0jvsR9NYLJA'});
+  const iwdPlaylist: any = await youtubeAPI.searchPlaylistItems('UUmEu9Y8nodUV0jvsR9NYLJA', 10, {part: 'snippet'});
+  const iwdVids: YoutubeData[] = iwdPlaylist.items;
+  const foxdropPlaylist: any = await youtubeAPI.searchPlaylistItems('UU9U_UPJLasfZYZ0icNI0vBg', 10, {part: 'snippet'});
+  const foxdropVids: YoutubeData[] = foxdropPlaylist.items;
 
-  const twitchClips = convertData(doubleliftClips, 'twitch-clip').concat(convertData(nb3Clips, 'twitch-clip'));
-  const youtubeVids = convertData(doubleliftVids, 'youtube-video').concat(convertData(iwdVids, 'youtube-video'));
+  const twitchClips: Content[] = convertTwitchClipData(doubleliftClips).concat(convertTwitchClipData(nb3Clips));
+  
+  const adcVids = convertYoutubeData(doubleliftVids).concat(convertYoutubeData(imaqtpieVids));
+  const jgVids = convertYoutubeData(iwdVids).concat(convertYoutubeData(foxdropVids));
+  const youtubeVids: Content[] = adcVids.concat(jgVids);
 
-  let convertedData = [];
-  convertedData = twitchClips.concat(youtubeVids);
+  const convertedData: Content[] = twitchClips.concat(youtubeVids);
 
   return shuffleArray(convertedData);
 }
