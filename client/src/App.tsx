@@ -23,8 +23,8 @@ interface Content {
   videoClipInfo?: object,
   upvotes?: number
 };
-
-let streamers = new Map();
+// 
+let streamers = new Map<String, Set<String>>();
 
 class App extends Component<{}, ComponentState> {
   constructor(props: {}) {
@@ -52,10 +52,14 @@ class App extends Component<{}, ComponentState> {
         if (!streamers.has(role)) {
           streamers.set(role, new Set([name]));
         } else {
-          const newStreamerEntry = streamers.get(role).add(name);
+          //https://github.com/microsoft/TypeScript/issues/9619
+          const newStreamerEntry = streamers.get(role)!.add(name);
           streamers.set(role, newStreamerEntry);
         }
       }
+      // these two lines are temp..
+      const newJgEntries = streamers.get('jg')!.add('iwdominate').add('foxdrop');
+      streamers.set('jg', newJgEntries);
 
       this.setState({
         fullContent: content
@@ -83,7 +87,7 @@ class App extends Component<{}, ComponentState> {
     } else {
       const result = contentArray.filter((media) => {
         // maybe do a fuzzy search (or some other equivalent) here instead of a strict string comparison?
-        return streamers.get(selectedRole).has(media.creatorName.toLowerCase());
+        return streamers.get(selectedRole)!.has(media.creatorName.toLowerCase());
       });
       return result;
     }
