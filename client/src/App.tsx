@@ -7,7 +7,8 @@ import { render } from 'react-dom';
 interface ComponentState {
   fullContent: Content[],
   selectedContentType: string,
-  selectedRole: string
+  selectedRole: string,
+  isLoading: boolean
 }
 
 interface Content {
@@ -23,7 +24,7 @@ interface Content {
   videoClipInfo?: object,
   upvotes?: number
 };
-// 
+
 let streamers = new Map<String, Set<String>>();
 
 class App extends Component<{}, ComponentState> {
@@ -33,13 +34,17 @@ class App extends Component<{}, ComponentState> {
     this.state = {
       fullContent: [],
       selectedContentType: 'all',
-      selectedRole: 'all'
+      selectedRole: 'all',
+      isLoading: false
     };
   }
 
   componentDidMount = async () => {
     try {
-      const res = await axios.get('http://localhost:1337/test');
+      this.setState({
+        isLoading: true
+      });
+      const res = await axios.get('http://localhost:1337/content');
       const content = res.data.content;
 
       const streamersRes = await axios.get('http://localhost:1337/streamers');
@@ -57,12 +62,10 @@ class App extends Component<{}, ComponentState> {
           streamers.set(role, newStreamerEntry);
         }
       }
-      // these two lines are temp..
-      const newJgEntries = streamers.get('jg')!.add('iwdominate').add('foxdrop');
-      streamers.set('jg', newJgEntries);
 
       this.setState({
-        fullContent: content
+        fullContent: content,
+        isLoading: false
       });
 
     } catch (e) {
@@ -86,7 +89,6 @@ class App extends Component<{}, ComponentState> {
       return contentArray;
     } else {
       const result = contentArray.filter((media) => {
-        // maybe do a fuzzy search (or some other equivalent) here instead of a strict string comparison?
         return streamers.get(selectedRole)!.has(media.creatorName.toLowerCase());
       });
       return result;
@@ -94,6 +96,8 @@ class App extends Component<{}, ComponentState> {
   }
 
   render = () => {
+    
+    if (this.state.isLoading) return this.renderLoading();
 
     let contentArray = this.state.fullContent;
     let selectedContentType = this.state.selectedContentType;
@@ -102,9 +106,10 @@ class App extends Component<{}, ComponentState> {
     contentArray = this.filterByContentType(selectedContentType, contentArray);
     contentArray = this.filterByRole(selectedRole, contentArray);
 
-    return contentArray.length > 0 ?
-      this.renderResults(contentArray) :
-      this.renderLoading()
+    return this.renderResults(contentArray);
+    // return contentArray.length > 0 ?
+    //   this.renderResults(contentArray) :
+    //   this.renderLoading()
   }
 
   /* https://stackoverflow.com/questions/42217579/data-binding-in-react */
