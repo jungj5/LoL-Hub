@@ -8,7 +8,7 @@ metadata:
     keel.sh/policy: minor
     keel.sh/trigger: poll
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: lolhub-dev
@@ -19,4 +19,20 @@ spec:
     spec:
       containers:
       - name: lolhub-server
-        image: jungj5/lol-hub:0.0.1-server-dev
+        image: jungj5/lol-hub:0.0.5-server-dev
+        env:
+        - name: YOUTUBE_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: content-credentials
+              key: YOUTUBE_API_KEY
+        - name: TWITCH_CLIENT_ID
+          valueFrom:
+            secretKeyRef:
+              name: content-credentials
+              key: TWITCH_CLIENT_ID
+        - name: TWITCH_CLIENT_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: content-credentials
+              key: TWITCH_CLIENT_SECRET
