@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "f2e2bdd4950f438776ab",
+    "revision": "9d9ab2d386beb797651b",
     "url": "/lol-hub/static/css/main.58e43d64.chunk.css"
   },
   {
-    "revision": "f2e2bdd4950f438776ab",
-    "url": "/lol-hub/static/js/main.b7a33f81.chunk.js"
+    "revision": "9d9ab2d386beb797651b",
+    "url": "/lol-hub/static/js/main.cceb4c2d.chunk.js"
   },
   {
     "revision": "209ac61905b68619b87e",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/lol-hub/static/media/logo.5d5d9eef.svg"
   },
   {
-    "revision": "bc361c684e5a53f9850541c50ca4515f",
+    "revision": "364c50fee598c94d3134207ce0a56d74",
     "url": "/lol-hub/index.html"
   }
 ];
