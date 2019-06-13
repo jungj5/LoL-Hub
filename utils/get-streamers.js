@@ -25,6 +25,15 @@ rp(url)
       }
     }
 
+    streamers.streamers.push({
+      'name': "iwdominate",
+      'role': "jg"
+    });
+    streamers.streamers.push({
+      'name': "foxdrop",
+      'role': "jg"
+    });
+
     fs.writeFileSync('../server/data/streamers.json', JSON.stringify(streamers, null, 4), (err) => {
       if (err) {
         console.log(err);
