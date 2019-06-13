@@ -108,14 +108,24 @@ export const getContent: FetchContentFunction = async () => {
   const doubleliftClips: HelixClip[] = await doubleliftRequest.getNext();
   const nb3Clips: HelixClip[] = await nb3Request.getNext();
 
-  const doubleliftPlaylist: any = await youtubeAPI.searchPlaylistItems('UUrPCP1oaOr0AEs2JdxzfOFA', 10, {part: 'snippet'});
+  const part = {
+    _part: 'snippet',
+    get part() {
+      return this._part;
+    },
+    set part(value: string) {
+      return;
+    }
+  };
+
+  const doubleliftPlaylist: any = await youtubeAPI.searchPlaylistItems('UUrPCP1oaOr0AEs2JdxzfOFA', 10, part);
   const doubleliftVids: YoutubeData[] = doubleliftPlaylist.items;
-  const imaqtpiePlaylist: any = await youtubeAPI.searchPlaylistItems('UUjyNFmk6Ionj9Lw9iIo9LtQ', 10, {part: 'snippet'})
+  const imaqtpiePlaylist: any = await youtubeAPI.searchPlaylistItems('UUjyNFmk6Ionj9Lw9iIo9LtQ', 10, part)
   const imaqtpieVids: YoutubeData[] = imaqtpiePlaylist.items;
 
-  const iwdPlaylist: any = await youtubeAPI.searchPlaylistItems('UUmEu9Y8nodUV0jvsR9NYLJA', 10, {part: 'snippet'});
+  const iwdPlaylist: any = await youtubeAPI.searchPlaylistItems('UUmEu9Y8nodUV0jvsR9NYLJA', 10, part);
   const iwdVids: YoutubeData[] = iwdPlaylist.items;
-  const foxdropPlaylist: any = await youtubeAPI.searchPlaylistItems('UU9U_UPJLasfZYZ0icNI0vBg', 10, {part: 'snippet'});
+  const foxdropPlaylist: any = await youtubeAPI.searchPlaylistItems('UU9U_UPJLasfZYZ0icNI0vBg', 10, part);
   const foxdropVids: YoutubeData[] = foxdropPlaylist.items;
 
   const twitchClips: Content[] = convertTwitchClipData(doubleliftClips).concat(convertTwitchClipData(nb3Clips));

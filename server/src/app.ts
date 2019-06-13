@@ -33,17 +33,19 @@ app.get('/', (req, res) => {
 
 let content: Content[] = [];
 
+console.log('Retrieving initial content for server startup..');
 getContent().then((res) => {
   content = res;
+  console.log('Retrieval complete!');
 });
 
-// setInterval(async () => {
-//   console.log('Content Updated!');
-//   content = await getContent();
-// }, 15000);
+setInterval(async () => {
+  content = await getContent();
+  console.log('Content Updated!');
+}, 1800000); // <--- 30 minutes...
 
-app.get('/test', async (req, res) => {
-  const content = await getContent();
+app.get('/content', async (req, res) => {
+  // const content = await getContent();
   res.send({ "content": content});
 });
 

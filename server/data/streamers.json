@@ -2163,6 +2163,14 @@
         {
             "name": "ごっふぃ",
             "role": "Fill"
+        },
+        {
+            "name": "iwdominate",
+            "role": "jg"
+        },
+        {
+            "name": "foxdrop",
+            "role": "jg"
         }
     ]
 }
