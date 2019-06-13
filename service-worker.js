@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/lol-hub/precache-manifest.2b42d7a8a4bfe13c8b80e250aafa2530.js"
+  "/LoL-Hub/precache-manifest.b04bff80b7673670719f7b1460b19ea8.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/lol-hub/index.html", {
+workbox.routing.registerNavigationRoute("/LoL-Hub/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

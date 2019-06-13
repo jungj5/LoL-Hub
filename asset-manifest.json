@@ -1,14 +1,14 @@
 {
-  "main.css": "/lol-hub/static/css/main.58e43d64.chunk.css",
-  "main.js": "/lol-hub/static/js/main.cceb4c2d.chunk.js",
-  "main.js.map": "/lol-hub/static/js/main.cceb4c2d.chunk.js.map",
-  "runtime~main.js": "/lol-hub/static/js/runtime~main.3732b222.js",
-  "runtime~main.js.map": "/lol-hub/static/js/runtime~main.3732b222.js.map",
-  "static/js/2.50959196.chunk.js": "/lol-hub/static/js/2.50959196.chunk.js",
-  "static/js/2.50959196.chunk.js.map": "/lol-hub/static/js/2.50959196.chunk.js.map",
-  "index.html": "/lol-hub/index.html",
-  "precache-manifest.2b42d7a8a4bfe13c8b80e250aafa2530.js": "/lol-hub/precache-manifest.2b42d7a8a4bfe13c8b80e250aafa2530.js",
-  "service-worker.js": "/lol-hub/service-worker.js",
-  "static/css/main.58e43d64.chunk.css.map": "/lol-hub/static/css/main.58e43d64.chunk.css.map",
-  "static/media/logo.svg": "/lol-hub/static/media/logo.5d5d9eef.svg"
+  "main.css": "/LoL-Hub/static/css/main.58e43d64.chunk.css",
+  "main.js": "/LoL-Hub/static/js/main.2f42d2ca.chunk.js",
+  "main.js.map": "/LoL-Hub/static/js/main.2f42d2ca.chunk.js.map",
+  "runtime~main.js": "/LoL-Hub/static/js/runtime~main.aeed379f.js",
+  "runtime~main.js.map": "/LoL-Hub/static/js/runtime~main.aeed379f.js.map",
+  "static/js/2.50959196.chunk.js": "/LoL-Hub/static/js/2.50959196.chunk.js",
+  "static/js/2.50959196.chunk.js.map": "/LoL-Hub/static/js/2.50959196.chunk.js.map",
+  "index.html": "/LoL-Hub/index.html",
+  "precache-manifest.b04bff80b7673670719f7b1460b19ea8.js": "/LoL-Hub/precache-manifest.b04bff80b7673670719f7b1460b19ea8.js",
+  "service-worker.js": "/LoL-Hub/service-worker.js",
+  "static/css/main.58e43d64.chunk.css.map": "/LoL-Hub/static/css/main.58e43d64.chunk.css.map",
+  "static/media/logo.svg": "/LoL-Hub/static/media/logo.5d5d9eef.svg"
 }
