@@ -44,10 +44,10 @@ class App extends Component<{}, ComponentState> {
       this.setState({
         isLoading: true
       });
-      const res = await axios.get('http://localhost:1337/content');
+      const res = await axios.get('http://35.193.175.216:443/content');
       const content = res.data.content;
 
-      const streamersRes = await axios.get('http://localhost:1337/streamers');
+      const streamersRes = await axios.get('http://35.193.175.216:443/streamers');
       const streamersArray = streamersRes.data.streamers
 
       // Populating Streamers Map..
@@ -141,7 +141,7 @@ class App extends Component<{}, ComponentState> {
                 height="390"
                 width="640"
                 frameBorder="10"
-                scrolling="no">
+                scrolling="no"
                 allowFullScreen>
               </iframe>
               <h3>{result.title}</h3>
