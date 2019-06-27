@@ -674,7 +674,8 @@
         },
         {
             "name": "nightblue3",
-            "role": "Jg"
+            "role": "Jg",
+            "twitchId": "26946000"
         },
         {
             "name": "shernfire",
@@ -1526,7 +1527,9 @@
         },
         {
             "name": "Doublelift",
-            "role": "ADC"
+            "role": "ADC",
+            "twitchId": "40017619",
+            "youtubeId": "UUrPCP1oaOr0AEs2JdxzfOFA"
         },
         {
             "name": "Deftly",
@@ -1602,7 +1605,8 @@
         },
         {
             "name": "imaqtpie",
-            "role": "ADC"
+            "role": "ADC",
+            "youtubeId": "UUjyNFmk6Ionj9Lw9iIo9LtQ"
         },
         {
             "name": "mash",
@@ -2163,6 +2167,16 @@
         {
             "name": "ごっふぃ",
             "role": "Fill"
+        },
+        {
+            "name": "iwdominate",
+            "role": "jg",
+            "youtubeId": "UUmEu9Y8nodUV0jvsR9NYLJA"
+        },
+        {
+            "name": "foxdrop",
+            "role": "jg",
+            "youtubeId": "UU9U_UPJLasfZYZ0icNI0vBg"
         }
     ]
 }

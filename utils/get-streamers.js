@@ -27,12 +27,27 @@ rp(url)
 
     streamers.streamers.push({
       'name': "iwdominate",
-      'role': "jg"
+      'role': "jg",
+      'youtubeId': "UUmEu9Y8nodUV0jvsR9NYLJA"
     });
     streamers.streamers.push({
       'name': "foxdrop",
-      'role': "jg"
+      'role': "jg",
+      'youtubeId': "UU9U_UPJLasfZYZ0icNI0vBg"
     });
+
+    // hardcoding youtube/twitch id's for certain streamers
+    for (let i = 0; i < streamers.streamers.length; i++) {
+      const streamer = streamers.streamers[i];
+      if (streamer.name.toLowerCase() === 'doublelift') {
+        streamer.twitchId = "40017619";
+        streamer.youtubeId  = "UUrPCP1oaOr0AEs2JdxzfOFA";
+      } else if (streamer.name.toLowerCase() === 'nightblue3') {
+        streamer.twitchId = "26946000";
+      } else if (streamer.name.toLowerCase() === 'imaqtpie') {
+        streamer.youtubeId = "UUjyNFmk6Ionj9Lw9iIo9LtQ";
+      }
+    }
 
     fs.writeFileSync('../server/data/streamers.json', JSON.stringify(streamers, null, 4), (err) => {
       if (err) {

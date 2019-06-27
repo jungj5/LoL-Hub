@@ -1,5 +1,6 @@
 import { YoutubeDataAPI } from 'youtube-v3-api';
 import TwitchClient, { HelixClip } from 'twitch';
+import * as streamers from './streamers.json';
 
 const YOUTUBE_API_KEY: string = process.env.YOUTUBE_API_KEY as string;
 const youtubeAPI = new YoutubeDataAPI(YOUTUBE_API_KEY);
@@ -20,6 +21,13 @@ interface Content {
   videoClipInfo?: object,
   upvotes?: number
 };
+
+interface Streamer {
+  name: string,
+  role: string,
+  youtubeId?: string,
+  twitchId?: string
+}
 
 interface TwitchData {
   id: string,
@@ -48,7 +56,7 @@ interface YoutubeData {
 
 type FetchContentFunction = () => Promise<Content[]>;
 
-const convertYoutubeData = (content: YoutubeData[]) => {
+const convertYoutubeData = (content: YoutubeData[]): Content[] => {
   let result = []
   for (let i = 0; i < content.length; i++) {
     let youtubeVid = {
@@ -66,7 +74,7 @@ const convertYoutubeData = (content: YoutubeData[]) => {
   return result;
 }
 
-const convertTwitchClipData = (content: TwitchData[]) => {
+const convertTwitchClipData = (content: TwitchData[]): Content[] => {
   let result = [];
   for (let i = 0; i < 5; i++) {
     let twitchClip = {
@@ -103,11 +111,6 @@ export const getContent: FetchContentFunction = async () => {
 
   const twitchClient = await TwitchClient.withClientCredentials(TWITCH_CLIENT_ID, TWITCH_CLIENT_SECRET);
 
-  const doubleliftRequest = twitchClient.helix.clips.getClipsForBroadcaster('40017619');
-  const nb3Request = twitchClient.helix.clips.getClipsForBroadcaster('26946000');
-  const doubleliftClips: HelixClip[] = await doubleliftRequest.getNext();
-  const nb3Clips: HelixClip[] = await nb3Request.getNext();
-
   const part = {
     _part: 'snippet',
     get part() {
@@ -118,21 +121,21 @@ export const getContent: FetchContentFunction = async () => {
     }
   };
 
-  const doubleliftPlaylist: any = await youtubeAPI.searchPlaylistItems('UUrPCP1oaOr0AEs2JdxzfOFA', 10, part);
-  const doubleliftVids: YoutubeData[] = doubleliftPlaylist.items;
-  const imaqtpiePlaylist: any = await youtubeAPI.searchPlaylistItems('UUjyNFmk6Ionj9Lw9iIo9LtQ', 10, part)
-  const imaqtpieVids: YoutubeData[] = imaqtpiePlaylist.items;
-
-  const iwdPlaylist: any = await youtubeAPI.searchPlaylistItems('UUmEu9Y8nodUV0jvsR9NYLJA', 10, part);
-  const iwdVids: YoutubeData[] = iwdPlaylist.items;
-  const foxdropPlaylist: any = await youtubeAPI.searchPlaylistItems('UU9U_UPJLasfZYZ0icNI0vBg', 10, part);
-  const foxdropVids: YoutubeData[] = foxdropPlaylist.items;
-
-  const twitchClips: Content[] = convertTwitchClipData(doubleliftClips).concat(convertTwitchClipData(nb3Clips));
-  
-  const adcVids = convertYoutubeData(doubleliftVids).concat(convertYoutubeData(imaqtpieVids));
-  const jgVids = convertYoutubeData(iwdVids).concat(convertYoutubeData(foxdropVids));
-  const youtubeVids: Content[] = adcVids.concat(jgVids);
+  let youtubeVids: Content[] = [];
+  let twitchClips: Content[] = [];
+  for (let i = 0; i < streamers.streamers.length; i++) {
+    const streamer: Streamer = streamers.streamers[i];
+    if (streamer.youtubeId) {
+      const streamerYoutubePlaylist: any = await youtubeAPI.searchPlaylistItems(streamer.youtubeId, 10, part);
+      const streamerYoutubeVids: YoutubeData[] = streamerYoutubePlaylist.items;
+      youtubeVids = youtubeVids.concat(convertYoutubeData(streamerYoutubeVids));
+    }
+    if (streamer.twitchId) {
+      const streamerTwitchRequest = await twitchClient.helix.clips.getClipsForBroadcaster(streamer.twitchId);
+      const streamerTwitchClips: HelixClip[] = await streamerTwitchRequest.getNext();
+      twitchClips = twitchClips.concat(convertTwitchClipData(streamerTwitchClips));
+    }
+  }
 
   const convertedData: Content[] = twitchClips.concat(youtubeVids);
 
