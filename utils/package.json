@@ -4,7 +4,10 @@
   "description": "Utils for LoL Hub",
   "main": "app.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "tsc -w"
   },
   "repository": {
     "type": "git",
@@ -20,6 +23,9 @@
     "cheerio": "^1.0.0-rc.3",
     "cheerio-tableparser": "^1.0.1",
     "request": "^2.88.0",
-    "request-promise": "^4.2.4"
+    "request-promise": "^4.2.4",
+    "twitch": "^2.2.2",
+    "typescript": "^3.4.4",
+    "youtube-v3-api": "^1.1.1"
   }
 }

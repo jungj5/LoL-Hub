@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import { getContent } from './get-content';
+import fs from 'fs';
 import * as streamers from './streamers.json';
 
 // Duplicated in client.. maybe move this into its own file?
@@ -33,19 +33,22 @@ app.get('/', (req, res) => {
 
 let content: Content[] = [];
 
-console.log('Retrieving initial content for server startup..');
-getContent().then((res) => {
-  content = res;
-  console.log('Retrieval complete!');
-});
+console.log('Waiting 5 seconds for GCSFuse mount and then retrieving initial content for server startup..');
+setTimeout(() => {
+  const rawData = fs.readFileSync('./data/content.json');
+  const data = JSON.parse(rawData.toString());
+  content = data.convertedData;
+}, 5000);
 
-setInterval(async () => {
-  content = await getContent();
+
+setInterval(() => {
+  const rawData = fs.readFileSync('./data/content.json');
+  const data = JSON.parse(rawData.toString());
+  content = data.convertedData;
   console.log('Content Updated!');
 }, 1800000); // <--- 30 minutes...
 
 app.get('/content', async (req, res) => {
-  // const content = await getContent();
   res.send({ "content": content});
 });
 
