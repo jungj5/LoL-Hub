@@ -1,0 +1,43 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: lolhub-data-generator-cron
+  namespace: dev
+spec:
+  schedule: "*/30 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: lolhub-data-generator
+            image: jungj5/lol-hub-data-generator:0.0.2
+            securityContext:
+              privileged: true
+              capabilities:
+                add:
+                  - SYS_ADMIN
+            lifecycle:
+              postStart:
+                exec:
+                  command: ["gcsfuse", "-o", "nonempty", "lol-hub-bucket", "/app/data"]
+              preStop:
+                exec:
+                  command: ["fusermount", "-u", "/app/data"]
+            env:
+            - name: YOUTUBE_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: content-credentials
+                  key: YOUTUBE_API_KEY
+            - name: TWITCH_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: content-credentials
+                  key: TWITCH_CLIENT_ID
+            - name: TWITCH_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: content-credentials
+                  key: TWITCH_CLIENT_SECRET
+          restartPolicy: OnFailure
