@@ -44,10 +44,10 @@ class App extends Component<{}, ComponentState> {
       this.setState({
         isLoading: true
       });
-      const res = await axios.get('http://35.193.175.216:443/content');
+      const res = await axios.get('https://lol-hub.net/content');
       const content = res.data.content;
 
-      const streamersRes = await axios.get('http://35.193.175.216:443/streamers');
+      const streamersRes = await axios.get('https://lol-hub.net/streamers');
       const streamersArray = streamersRes.data.streamers
 
       // Populating Streamers Map..
