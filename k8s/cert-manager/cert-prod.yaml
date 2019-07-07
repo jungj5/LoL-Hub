@@ -1,0 +1,37 @@
+apiVersion: certmanager.k8s.io/v1alpha1
+
+kind: Certificate
+
+metadata:
+
+  name: lolhub-cert-prod
+
+  namespace: default
+
+spec:
+
+  secretName: lolhub-cert-prod
+
+  issuerRef:
+
+    name: letsencrypt-production
+
+    kind: ClusterIssuer
+
+  commonName: lol-hub.net
+
+  dnsNames:
+
+  - lol-hub.net
+
+  acme:
+
+    config:
+
+    - dns01:
+
+        provider: clouddns
+
+      domains:
+
+      - lol-hub.net
