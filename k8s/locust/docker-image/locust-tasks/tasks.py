@@ -54,6 +54,6 @@ class MyTaskSet(TaskSet):
 
 class MyLocust(HttpLocust):
     task_set = MyTaskSet
-    host = "http://35.193.175.216:443"
+    host = "https://lol-hub.net"
     min_wait = 5000
     max_wait = 10000
