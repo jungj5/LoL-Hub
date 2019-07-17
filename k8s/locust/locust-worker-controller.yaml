@@ -28,6 +28,13 @@ spec:
       labels:
         app: locust-worker
     spec:
+      affinity:
+        podAntiAffinity:                                 
+          requiredDuringSchedulingIgnoredDuringExecution:
+          - topologyKey: kubernetes.io/hostname 
+            labelSelector:                               
+              matchLabels:                               
+                app: locust-worker
       containers:
         - name: locust-worker
           image: jungj5/lol-hub-locust:0.0.1
