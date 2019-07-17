@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "lolhub-chart.fullname" . }}
+  labels:
+{{ include "lolhub-chart.labels" . | indent 4 }}    
+    keel.sh/policy: minor
+    keel.sh/trigger: poll
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ include "lolhub-chart.name" . }}
+  template:
+    metadata:
+      labels:
+        app: {{ include "lolhub-chart.name" . }}
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          securityContext:
+            privileged: true
+            capabilities:
+              add:
+                - SYS_ADMIN
+          lifecycle:
+            postStart:
+              exec:
+                command: ["gcsfuse", "-o", "nonempty", "lol-hub-bucket", "/app/data"]
+            preStop:
+              exec:
+                command: ["fusermount", "-u", "/app/data"]
