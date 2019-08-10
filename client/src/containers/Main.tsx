@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import LazyLoad from 'react-lazyload';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../logo.svg';
 import axios from 'axios';
 import { render } from 'react-dom';
 
@@ -28,7 +27,7 @@ interface Content {
 
 let streamers = new Map<String, Set<String>>();
 
-class App extends Component<{}, ComponentState> {
+class Main extends Component<{}, ComponentState> {
   constructor(props: {}) {
     super(props);
 
@@ -115,6 +114,7 @@ class App extends Component<{}, ComponentState> {
   renderResults = (results: Content[]) => {
     return (
       <div>
+        {process.env.REACT_APP_API_BASE_URL}
         <select
           name="selectedContentType"
           value={this.state.selectedContentType}
@@ -167,26 +167,8 @@ class App extends Component<{}, ComponentState> {
   };
 
   renderLoading = () => {
-    return (
-      <div style={{ backgroundColor: '#141414' }}>
-        <img src={logo} className="App-logo" alt="logo" />
-      </div>
-    );
+    return <div>bear with us as we load your content</div>;
   };
 }
 
-export default App;
-
-//https://www.robinwieruch.de/react-fetching-data/
-//https://codepen.io/pjmtokyo/pen/ZGVjVV/
-//https://moduscreate.com/blog/ext-js-to-react-load-sort-and-filter-data-with-react/
-
-// referential transparancy
-// functional purity (pure functions)
-// Read up on these!!
-
-// React developer tools <-- get dis
-
-/*
-Data Binding in React
-*/
+export default Main;
