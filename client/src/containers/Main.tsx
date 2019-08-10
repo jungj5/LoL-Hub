@@ -44,10 +44,10 @@ class Main extends Component<{}, ComponentState> {
       this.setState({
         isLoading: true,
       });
-      const res = await axios.get('https://lol-hub.net/content');
+      const res = await axios.get(process.env.REACT_APP_API_BASE_URL + 'content');
       const content = res.data.content;
 
-      const streamersRes = await axios.get('https://lol-hub.net/streamers');
+      const streamersRes = await axios.get(process.env.REACT_APP_API_BASE_URL + 'streamers');
       const streamersArray = streamersRes.data.streamers;
 
       // Populating Streamers Map..
@@ -114,7 +114,6 @@ class Main extends Component<{}, ComponentState> {
   renderResults = (results: Content[]) => {
     return (
       <div>
-        {process.env.REACT_APP_API_BASE_URL}
         <select
           name="selectedContentType"
           value={this.state.selectedContentType}
