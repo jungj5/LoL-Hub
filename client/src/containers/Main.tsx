@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { render } from 'react-dom';
 
 import ContentView from '../components/ContentView';
 import { ComponentState, Content } from '../interfaces/Content';
