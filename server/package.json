@@ -23,7 +23,7 @@
     "@types/cors": "^2.8.4",
     "@types/express": "^4.11.1",
     "cors": "^2.8.5",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
     "twitch": "^2.2.2",
